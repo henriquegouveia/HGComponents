@@ -21,9 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4D04190818C01440009D17E4 /* UIView+HGAdditionals.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D04190718C01440009D17E4 /* UIView+HGAdditionals.m */; };
 		4D712C3618BEB22A0034545D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D712C3518BEB22A0034545D /* Foundation.framework */; };
 		4D712C3B18BEB22A0034545D /* HGComponents.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C3A18BEB22A0034545D /* HGComponents.h */; };
-		4D712C3D18BEB22A0034545D /* HGComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C3C18BEB22A0034545D /* HGComponents.m */; };
 		4D712C4418BEB22A0034545D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D712C4318BEB22A0034545D /* XCTest.framework */; };
 		4D712C4518BEB22A0034545D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D712C3518BEB22A0034545D /* Foundation.framework */; };
 		4D712C4718BEB22A0034545D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D712C4618BEB22A0034545D /* UIKit.framework */; };
@@ -47,7 +47,26 @@
 		4D712C9818BEB2AF0034545D /* HGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C8818BEB2AF0034545D /* HGWebView.m */; };
 		4D712CA218BEB4A00034545D /* UIColor+HGAdditionals.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712CA118BEB4A00034545D /* UIColor+HGAdditionals.m */; };
 		4D712CAB18BEB7E20034545D /* HGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712CAA18BEB7E20034545D /* HGTableViewCell.m */; };
-		4D712CB218BEBB4A0034545D /* HGQuartzFunctionsStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712CB118BEBB4A0034545D /* HGQuartzFunctionsStrategy.m */; };
+		4DACD00018C02325008437C2 /* UIView+HGAdditionals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D04190618C01440009D17E4 /* UIView+HGAdditionals.h */; };
+		4DACD00118C02325008437C2 /* UIColor+HGAdditionals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712CA018BEB4A00034545D /* UIColor+HGAdditionals.h */; };
+		4DACD00218C02325008437C2 /* HGTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712CA918BEB7E20034545D /* HGTableViewCell.h */; };
+		4DACD00318C02325008437C2 /* HGTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C7B18BEB2AF0034545D /* HGTableViewController.h */; };
+		4DACD00418C02325008437C2 /* HGAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C5C18BEB2AF0034545D /* HGAlertView.h */; };
+		4DACD00518C02325008437C2 /* HGButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C5F18BEB2AF0034545D /* HGButton.h */; };
+		4DACD00618C02325008437C2 /* HGMenuButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6118BEB2AF0034545D /* HGMenuButton.h */; };
+		4DACD00718C02325008437C2 /* HGDragView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6418BEB2AF0034545D /* HGDragView.h */; };
+		4DACD00818C02325008437C2 /* HGDragViewRightToLeftStrategy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6618BEB2AF0034545D /* HGDragViewRightToLeftStrategy.h */; };
+		4DACD00918C02325008437C2 /* HGMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6918BEB2AF0034545D /* HGMenu.h */; };
+		4DACD00A18C02325008437C2 /* HGPagingScroll.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6C18BEB2AF0034545D /* HGPagingScroll.h */; };
+		4DACD00B18C02325008437C2 /* HGRingChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6F18BEB2AF0034545D /* HGRingChart.h */; };
+		4DACD00C18C02325008437C2 /* HGSearchBar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C7218BEB2AF0034545D /* HGSearchBar.h */; };
+		4DACD00D18C02325008437C2 /* HGSlider.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C7518BEB2AF0034545D /* HGSlider.h */; };
+		4DACD00E18C02325008437C2 /* HGTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C7E18BEB2AF0034545D /* HGTextField.h */; };
+		4DACD00F18C02325008437C2 /* HGTextView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C8118BEB2AF0034545D /* HGTextView.h */; };
+		4DACD01018C02325008437C2 /* HGView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C8418BEB2AF0034545D /* HGView.h */; };
+		4DACD01118C02325008437C2 /* HGWebView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C8718BEB2AF0034545D /* HGWebView.h */; };
+		4DEE7F9118C00C2E00973E79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE7F9018C00C2E00973E79 /* UIKit.framework */; };
+		4DEE7F9318C00C3200973E79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE7F9218C00C3200973E79 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +82,28 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		4D712C3018BEB22A0034545D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				4DACD00018C02325008437C2 /* UIView+HGAdditionals.h in CopyFiles */,
+				4DACD00118C02325008437C2 /* UIColor+HGAdditionals.h in CopyFiles */,
+				4DACD00218C02325008437C2 /* HGTableViewCell.h in CopyFiles */,
+				4DACD00318C02325008437C2 /* HGTableViewController.h in CopyFiles */,
+				4DACD00418C02325008437C2 /* HGAlertView.h in CopyFiles */,
+				4DACD00518C02325008437C2 /* HGButton.h in CopyFiles */,
+				4DACD00618C02325008437C2 /* HGMenuButton.h in CopyFiles */,
+				4DACD00718C02325008437C2 /* HGDragView.h in CopyFiles */,
+				4DACD00818C02325008437C2 /* HGDragViewRightToLeftStrategy.h in CopyFiles */,
+				4DACD00918C02325008437C2 /* HGMenu.h in CopyFiles */,
+				4DACD00A18C02325008437C2 /* HGPagingScroll.h in CopyFiles */,
+				4DACD00B18C02325008437C2 /* HGRingChart.h in CopyFiles */,
+				4DACD00C18C02325008437C2 /* HGSearchBar.h in CopyFiles */,
+				4DACD00D18C02325008437C2 /* HGSlider.h in CopyFiles */,
+				4DACD00E18C02325008437C2 /* HGTextField.h in CopyFiles */,
+				4DACD00F18C02325008437C2 /* HGTextView.h in CopyFiles */,
+				4DACD01018C02325008437C2 /* HGView.h in CopyFiles */,
+				4DACD01118C02325008437C2 /* HGWebView.h in CopyFiles */,
 				4D712C3B18BEB22A0034545D /* HGComponents.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,11 +111,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D04190618C01440009D17E4 /* UIView+HGAdditionals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HGAdditionals.h"; sourceTree = "<group>"; };
+		4D04190718C01440009D17E4 /* UIView+HGAdditionals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HGAdditionals.m"; sourceTree = "<group>"; };
 		4D712C3218BEB22A0034545D /* libHGComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHGComponents.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D712C3518BEB22A0034545D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4D712C3918BEB22A0034545D /* HGComponents-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HGComponents-Prefix.pch"; sourceTree = "<group>"; };
 		4D712C3A18BEB22A0034545D /* HGComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGComponents.h; sourceTree = "<group>"; };
-		4D712C3C18BEB22A0034545D /* HGComponents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGComponents.m; sourceTree = "<group>"; };
 		4D712C4218BEB22A0034545D /* HGComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D712C4318BEB22A0034545D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4D712C4618BEB22A0034545D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -119,9 +157,8 @@
 		4D712CA118BEB4A00034545D /* UIColor+HGAdditionals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HGAdditionals.m"; sourceTree = "<group>"; };
 		4D712CA918BEB7E20034545D /* HGTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGTableViewCell.h; sourceTree = "<group>"; };
 		4D712CAA18BEB7E20034545D /* HGTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGTableViewCell.m; sourceTree = "<group>"; };
-		4D712CAF18BEBA5A0034545D /* HGQuartzFunctionsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGQuartzFunctionsProtocol.h; sourceTree = "<group>"; };
-		4D712CB018BEBB4A0034545D /* HGQuartzFunctionsStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGQuartzFunctionsStrategy.h; sourceTree = "<group>"; };
-		4D712CB118BEBB4A0034545D /* HGQuartzFunctionsStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGQuartzFunctionsStrategy.m; sourceTree = "<group>"; };
+		4DEE7F9018C00C2E00973E79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4DEE7F9218C00C3200973E79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +166,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEE7F9318C00C3200973E79 /* QuartzCore.framework in Frameworks */,
+				4DEE7F9118C00C2E00973E79 /* UIKit.framework in Frameworks */,
 				4D712C3618BEB22A0034545D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +186,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D04190518C013C4009D17E4 /* UIView+HGAdditionals */ = {
+			isa = PBXGroup;
+			children = (
+				4D04190618C01440009D17E4 /* UIView+HGAdditionals.h */,
+				4D04190718C01440009D17E4 /* UIView+HGAdditionals.m */,
+			);
+			path = "UIView+HGAdditionals";
+			sourceTree = "<group>";
+		};
 		4D712C2918BEB22A0034545D = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +217,8 @@
 		4D712C3418BEB22A0034545D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DEE7F9218C00C3200973E79 /* QuartzCore.framework */,
+				4DEE7F9018C00C2E00973E79 /* UIKit.framework */,
 				4D712C3518BEB22A0034545D /* Foundation.framework */,
 				4D712C4318BEB22A0034545D /* XCTest.framework */,
 				4D712C4618BEB22A0034545D /* UIKit.framework */,
@@ -195,7 +245,6 @@
 				4D712C8318BEB2AF0034545D /* HGView */,
 				4D712C8618BEB2AF0034545D /* HGWebView */,
 				4D712C3A18BEB22A0034545D /* HGComponents.h */,
-				4D712C3C18BEB22A0034545D /* HGComponents.m */,
 				4D712C3818BEB22A0034545D /* Supporting Files */,
 			);
 			path = HGComponents;
@@ -351,7 +400,7 @@
 		4D712C9E18BEB4A00034545D /* HGUtils */ = {
 			isa = PBXGroup;
 			children = (
-				4D712CAE18BEBA5A0034545D /* QuartzFunctionsProtocol */,
+				4D04190518C013C4009D17E4 /* UIView+HGAdditionals */,
 				4D712C9F18BEB4A00034545D /* UIColor+HGAdditionals */,
 			);
 			path = HGUtils;
@@ -373,16 +422,6 @@
 				4D712CAA18BEB7E20034545D /* HGTableViewCell.m */,
 			);
 			path = HGTableViewCell;
-			sourceTree = "<group>";
-		};
-		4D712CAE18BEBA5A0034545D /* QuartzFunctionsProtocol */ = {
-			isa = PBXGroup;
-			children = (
-				4D712CAF18BEBA5A0034545D /* HGQuartzFunctionsProtocol.h */,
-				4D712CB018BEBB4A0034545D /* HGQuartzFunctionsStrategy.h */,
-				4D712CB118BEBB4A0034545D /* HGQuartzFunctionsStrategy.m */,
-			);
-			path = QuartzFunctionsProtocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,7 +513,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\nUNIVERSAL_OUTPUTFOLDER_LOCAL=${SRCROOT}/build\n\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER_LOCAL}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target CITFramework ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target CITFramework -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}\" \"${UNIVERSAL_OUTPUTFOLDER_LOCAL}/\"\n\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER_LOCAL}/libHGComponents.build\"";
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\nUNIVERSAL_OUTPUTFOLDER_LOCAL=${SRCROOT}/build\n\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER_LOCAL}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target HGComponents ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target HGComponents -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}\" \"${UNIVERSAL_OUTPUTFOLDER_LOCAL}/\"\n\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER_LOCAL}/libHGComponents.build\"";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -489,7 +529,7 @@
 				4D712C9518BEB2AF0034545D /* HGTextField.m in Sources */,
 				4D712CAB18BEB7E20034545D /* HGTableViewCell.m in Sources */,
 				4D712C9218BEB2AF0034545D /* HGSlider.m in Sources */,
-				4D712C3D18BEB22A0034545D /* HGComponents.m in Sources */,
+				4D04190818C01440009D17E4 /* UIView+HGAdditionals.m in Sources */,
 				4D712C9618BEB2AF0034545D /* HGTextView.m in Sources */,
 				4D712CA218BEB4A00034545D /* UIColor+HGAdditionals.m in Sources */,
 				4D712C8E18BEB2AF0034545D /* HGMenu.m in Sources */,
@@ -498,7 +538,6 @@
 				4D712C9418BEB2AF0034545D /* HGTableViewController.m in Sources */,
 				4D712C9118BEB2AF0034545D /* HGSearchBar.m in Sources */,
 				4D712C8A18BEB2AF0034545D /* HGButton.m in Sources */,
-				4D712CB218BEBB4A0034545D /* HGQuartzFunctionsStrategy.m in Sources */,
 				4D712C8B18BEB2AF0034545D /* HGMenuButton.m in Sources */,
 				4D712C8C18BEB2AF0034545D /* HGDragView.m in Sources */,
 				4D712C9718BEB2AF0034545D /* HGView.m in Sources */,
@@ -568,7 +607,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -600,6 +643,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -611,7 +658,11 @@
 				DSTROOT = /tmp/HGComponents.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HGComponents/HGComponents-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -623,7 +674,10 @@
 				DSTROOT = /tmp/HGComponents.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HGComponents/HGComponents-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -670,6 +724,10 @@
 		4D712CA518BEB6BF0034545D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -677,6 +735,10 @@
 		4D712CA618BEB6BF0034545D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

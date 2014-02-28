@@ -8,11 +8,9 @@
 
 #import "HGView.h"
 
-#import "HGQuartzFunctionsStrategy.h"
+#import "UIView+HGAdditionals.h"
 
 @interface HGView ()
-
-@property (strong, nonatomic) HGQuartzFunctionsStrategy *quartzStrategy;
 
 @property (assign, nonatomic) BOOL roundTopLeftCorner;
 @property (assign, nonatomic) BOOL roundTopRightCorner;
@@ -29,6 +27,8 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    
+    [self _setup];
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -54,8 +54,6 @@
 
 - (void)_setup
 {
-    _quartzStrategy = [HGQuartzFunctionsStrategy new];
-
     [self _setupRoundedCorners];
 }
 
@@ -63,12 +61,10 @@
 {
     if (_roundAllCorners)
     {
-        [_quartzStrategy roundComponentCorners:self withRadius:_radius]
+        [self roundComponentCorners:_radius];
     } else {
         UIRectCorner corners = [self _setupCheckCorners];
-        [_quartzStrategy roundedSpecificCorners:corners
-                                    toComponent:self
-                                     withRadius:_radius];
+        [self roundedSpecificCorners:corners withRadius:_radius];
     }
 }
 

@@ -8,11 +8,9 @@
 
 #import "HGTextField.h"
 
-#import "HGQuartzFunctionsStrategy.h"
+#import "UIView+HGAdditionals.h"
 
-@interface HGTextField () <HGQuartzFunctionsProtocol>
-
-@property (strong, nonatomic) HGQuartzFunctionsStrategy *quartzStrategy;
+@interface HGTextField ()
 
 @property (assign, nonatomic) CGFloat radius;
 
@@ -24,7 +22,7 @@
 {
     [super awakeFromNib];
     
-    [self cornerRadiusCustom:_radius];
+    [self _setup];
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -40,8 +38,6 @@
 
 - (void)_setup
 {
-    _quartzStrategy = [HGQuartzFunctionsStrategy new];
-    
     [self _setupCorners];
 }
 
@@ -49,7 +45,7 @@
 {
     if (_radius)
     {
-        [_quartzStrategy roundComponentCorners:self withRadius:_radius];
+        [self roundComponentCorners:_radius];
     }
 }
 
