@@ -8,7 +8,7 @@
 
 #import "HGButton.h"
 #import "UIColor+HGAdditionals.h"
-#import <QuartzCore/QuartzCore.h>
+#import "UIView+HGAdditionals.h"
 
 const NSString *kTitleProperty = @"kTitleProperty";
 const NSString *kGradientHorizontalProperty = @"kGradientHorizontalProperty";
@@ -45,7 +45,7 @@ const NSString *kShadowOffset = @"kShadowOffset";
     if (!_backgroundAlpha)
         _backgroundAlpha = 1.0f;
     
-    [self cornerRadiusCustom:_radius];
+    [self roundComponentCorners:_radius];
 
     if (_customBackgroundColor)
         [self backgroundColorWithAlpha:_customBackgroundColor alpha:_backgroundAlpha];
@@ -88,10 +88,6 @@ const NSString *kShadowOffset = @"kShadowOffset";
     
     if (properties[kBackgroundSelectedImageProperty] != nil) {
         [self backgroundSelectedImage:properties[kBackgroundSelectedImageProperty]];
-    }
-    
-    if (properties[kCornerRadiusProperty] != nil) {
-        [self cornerRadiusCustom:[properties[kCornerRadiusProperty] floatValue]];
     }
     
     if (properties[kBorderColorProperty] != nil && properties[kBorderWidthProperty] != nil) {
@@ -172,12 +168,6 @@ const NSString *kShadowOffset = @"kShadowOffset";
 - (void)backgroundSelectedImage:(UIImage *)image
 {
     [self setBackgroundImage:image forState:UIControlStateSelected];
-}
-
-- (void)cornerRadiusCustom:(CGFloat)radius
-{
-    [self.layer setMasksToBounds:YES];
-    [self.layer setCornerRadius:radius];
 }
 
 - (void)borderWidth:(CGFloat)width withColor:(UIColor *)color

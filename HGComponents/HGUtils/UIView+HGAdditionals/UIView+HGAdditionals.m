@@ -10,6 +10,12 @@
 
 @implementation UIView (HGAdditionals)
 
+/**
+ *  It's to round specific corners of your view
+ *
+ *  @param rectCorner One or more items of enum UIRectCorner... e.g (UIRectCornerTopLeft | UIRectCornerTopRight)
+ *  @param radius     A float value like 7.0f or 10.0f
+ */
 - (void)roundedSpecificCorners:(UIRectCorner)rectCorner withRadius:(CGFloat)radius
 {
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
