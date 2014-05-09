@@ -25,10 +25,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HGView.h"
 
 @protocol EHDragOutViewStrategyProtocol;
 
-@interface EHDragOutView : UIView
+@interface EHDragOutView : HGView
 
 @property (nonatomic) CGFloat peakAmount;
 @property (nonatomic) CGFloat maxExtendedAmount;

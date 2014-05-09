@@ -11,22 +11,22 @@
 typedef enum {
     HGViewAnchorPointUpLeft = 0,
     HGViewAnchorPointMiddleLeft,
-    HGViewAnchorPointDownLeft,
+    HGViewAnchorPointBottomLeft,
     HGViewAnchorPointUpCenter,
     HGViewAnchorPointCenter,
-    HGViewAnchorPointDownCenter,
+    HGViewAnchorPointBottomCenter,
     HGViewAnchorPointUpRight,
     HGViewAnchorPointMiddleRight,
-    HGViewAnchorPointDownRight
+    HGViewAnchorPointBottomRight
 }HGViewAnchorPoint;
 
 @interface HGView : UIView
 
 - (id)initWithFrame:(CGRect)frame andFlexibleAutoResizing:(UIViewAutoresizing)autoResizing;
 
-- (void)addToParentView:(UIView*)parentView withMenuAnimation:(BOOL)status atPoint:(CGPoint)point;
+- (void)showWithMenuAnimationByState:(BOOL)isOpened;
 
-- (void)addShadow:(CGFloat)radius withColor:(UIColor *)color opaHGy:(CGFloat)opaHGy offset:(CGFloat)offset;
+- (void)addShadow:(CGFloat)radius withColor:(UIColor *)color opacity:(CGFloat)opacity offset:(CGFloat)offset;
 
 - (void)anchorPoint:(HGViewAnchorPoint)point;
 

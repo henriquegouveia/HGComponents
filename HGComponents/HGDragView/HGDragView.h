@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Henrique Gouveia. All rights reserved.
 //
 
-#import "HGView.h"
+#import "EHDragOutView.h"
 
 //
 //
@@ -23,15 +23,12 @@ typedef enum
 
 @protocol HGDragViewStrategyProtocol;
 
-@interface HGDragView : HGView
+@interface HGDragView : EHDragOutView
 
 @property (nonatomic, assign) BOOL draggedMenuOpen;
 @property (nonatomic) NSString *strategy;
-@property (nonatomic) CGFloat peakAmount;
-@property (nonatomic) CGFloat maxExtendedAmount;
-@property (nonatomic) CGFloat visibleAmount;
-@property (nonatomic, strong) id<HGDragViewStrategyProtocol> dragOutViewStrategy;
-@property (nonatomic) CGFloat veloHGyAnimation;
+@property (nonatomic) CGFloat velocityAnimation;
+
 @end
 
 @protocol HGDragViewStrategyProtocol <NSObject>

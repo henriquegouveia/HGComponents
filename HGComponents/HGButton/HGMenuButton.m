@@ -175,7 +175,6 @@
         _heightLines = self.frame.size.height/7;
     }
     
-    
     if (!_widthLines) {
         CGFloat percentage = 80.0f/100.0f;
         _widthLines = self.frame.size.width * percentage;

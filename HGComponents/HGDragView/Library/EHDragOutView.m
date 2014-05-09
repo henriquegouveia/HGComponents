@@ -35,12 +35,6 @@
 
 @implementation EHDragOutView
 
-@synthesize panGestureRecognizer = _panGestureRecognizer;
-@synthesize peakAmount = _peakAmount;
-@synthesize maxExtendedAmount = _maxExtendedAmount;
-@synthesize visibleAmount = _visibleAmount;
-@synthesize dragOutViewStrategy = _dragOutViewStrategy;
-
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

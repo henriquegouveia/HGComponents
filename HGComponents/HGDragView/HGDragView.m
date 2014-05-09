@@ -7,7 +7,12 @@
 //
 
 #import "HGDragView.h"
-#import "HGDragViewRightToLeftStrategy.h"
+
+#import "EHDragOutViewBottomToTopStrategy.h"
+#import "EHDragOutViewLeftToRightStrategy.h"
+#import "EHDragOutViewRightToLeftStrategy.h"
+#import "EHDragOutViewTopToBottomStrategy.h"
+
 #import <QuartzCore/QuartzCore.h>
 
 #define k_RightDragMenuNotification @"RightDragMenuNotification"
@@ -23,18 +28,13 @@ static NSString * const kHGDragOutViewStrategy = @"strategy";
 
 @implementation HGDragView
 
-@synthesize panGestureRecognizer = _panGestureRecognizer;
-@synthesize peakAmount = _peakAmount;
-@synthesize maxExtendedAmount = _maxExtendedAmount;
-@synthesize visibleAmount = _visibleAmount;
-@synthesize dragOutViewStrategy = _dragOutViewStrategy;
-@synthesize veloHGyAnimation = _veloHGyAnimation;
-
 - (void)awakeFromNib
 {
-    _dragOutViewStrategy = [[NSClassFromString(self.strategy) alloc] init];
+    NSString *classStrategy = [NSString stringWithFormat:@"EHDragOutView%@Strategy", _strategy];
 
+    self.dragOutViewStrategy = [[NSClassFromString(classStrategy) alloc] init];
     _panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleDrag:)];
+    
     [self addGestureRecognizer:_panGestureRecognizer];
 }
 
@@ -66,14 +66,14 @@ static NSString * const kHGDragOutViewStrategy = @"strategy";
     }
     else if (recognizer.state == UIGestureRecognizerStateEnded || recognizer.state == UIGestureRecognizerStateCancelled)
     {
-        CGPoint currentVeloHGyPoint = [recognizer velocityInView:self.superview];
+        CGPoint currentVelocityPoint = [recognizer velocityInView:self.superview];
         
         BOOL isShowingMoreThanVisibleAmount = [self.dragOutViewStrategy isShowingMoreThanVisibleAmountForDraggingView:self atPoint:self.center inView:self.superview];
-        BOOL shouldShowDraggingViewBasedOnVeloHGy = [self.dragOutViewStrategy shouldShowDraggingView:self basedOnVeloHGy:currentVeloHGyPoint];
+        BOOL shouldShowDraggingViewBasedOnVelocity = [self.dragOutViewStrategy shouldShowDraggingView:self basedOnVelocity:currentVelocityPoint];
         
         CGPoint finalPoint;
         
-        if (shouldShowDraggingViewBasedOnVeloHGy || isShowingMoreThanVisibleAmount) {
+        if (shouldShowDraggingViewBasedOnVelocity || isShowingMoreThanVisibleAmount) {
             // open dragging view
             self.draggedMenuOpen = NO;
             [[NSNotificationCenter defaultCenter] postNotificationName:k_LeftDragMenuNotification object:self];
@@ -92,7 +92,7 @@ static NSString * const kHGDragOutViewStrategy = @"strategy";
 
 - (void)slideToNewCenter:(CGPoint)newCenter
 {
-    [UIView animateWithDuration:_veloHGyAnimation animations:^{
+    [UIView animateWithDuration:_velocityAnimation animations:^{
         self.center = newCenter;
     }];
 }
