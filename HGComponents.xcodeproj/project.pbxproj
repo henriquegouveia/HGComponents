@@ -34,7 +34,6 @@
 		4D712C8A18BEB2AF0034545D /* HGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C6018BEB2AF0034545D /* HGButton.m */; };
 		4D712C8B18BEB2AF0034545D /* HGMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C6218BEB2AF0034545D /* HGMenuButton.m */; };
 		4D712C8C18BEB2AF0034545D /* HGDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C6518BEB2AF0034545D /* HGDragView.m */; };
-		4D712C8D18BEB2AF0034545D /* HGDragViewRightToLeftStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C6718BEB2AF0034545D /* HGDragViewRightToLeftStrategy.m */; };
 		4D712C8E18BEB2AF0034545D /* HGMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C6A18BEB2AF0034545D /* HGMenu.m */; };
 		4D712C8F18BEB2AF0034545D /* HGPagingScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C6D18BEB2AF0034545D /* HGPagingScroll.m */; };
 		4D712C9018BEB2AF0034545D /* HGRingChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C7018BEB2AF0034545D /* HGRingChart.m */; };
@@ -55,7 +54,6 @@
 		4DACD00518C02325008437C2 /* HGButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C5F18BEB2AF0034545D /* HGButton.h */; };
 		4DACD00618C02325008437C2 /* HGMenuButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6118BEB2AF0034545D /* HGMenuButton.h */; };
 		4DACD00718C02325008437C2 /* HGDragView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6418BEB2AF0034545D /* HGDragView.h */; };
-		4DACD00818C02325008437C2 /* HGDragViewRightToLeftStrategy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6618BEB2AF0034545D /* HGDragViewRightToLeftStrategy.h */; };
 		4DACD00918C02325008437C2 /* HGMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6918BEB2AF0034545D /* HGMenu.h */; };
 		4DACD00A18C02325008437C2 /* HGPagingScroll.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6C18BEB2AF0034545D /* HGPagingScroll.h */; };
 		4DACD00B18C02325008437C2 /* HGRingChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C6F18BEB2AF0034545D /* HGRingChart.h */; };
@@ -94,7 +92,6 @@
 				4DACD00518C02325008437C2 /* HGButton.h in CopyFiles */,
 				4DACD00618C02325008437C2 /* HGMenuButton.h in CopyFiles */,
 				4DACD00718C02325008437C2 /* HGDragView.h in CopyFiles */,
-				4DACD00818C02325008437C2 /* HGDragViewRightToLeftStrategy.h in CopyFiles */,
 				4DACD00918C02325008437C2 /* HGMenu.h in CopyFiles */,
 				4DACD00A18C02325008437C2 /* HGPagingScroll.h in CopyFiles */,
 				4DACD00B18C02325008437C2 /* HGRingChart.h in CopyFiles */,
@@ -131,8 +128,6 @@
 		4D712C6218BEB2AF0034545D /* HGMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGMenuButton.m; sourceTree = "<group>"; };
 		4D712C6418BEB2AF0034545D /* HGDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGDragView.h; sourceTree = "<group>"; };
 		4D712C6518BEB2AF0034545D /* HGDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGDragView.m; sourceTree = "<group>"; };
-		4D712C6618BEB2AF0034545D /* HGDragViewRightToLeftStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGDragViewRightToLeftStrategy.h; sourceTree = "<group>"; };
-		4D712C6718BEB2AF0034545D /* HGDragViewRightToLeftStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGDragViewRightToLeftStrategy.m; sourceTree = "<group>"; };
 		4D712C6918BEB2AF0034545D /* HGMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGMenu.h; sourceTree = "<group>"; };
 		4D712C6A18BEB2AF0034545D /* HGMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGMenu.m; sourceTree = "<group>"; };
 		4D712C6C18BEB2AF0034545D /* HGPagingScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPagingScroll.h; sourceTree = "<group>"; };
@@ -301,8 +296,6 @@
 			children = (
 				4D712C6418BEB2AF0034545D /* HGDragView.h */,
 				4D712C6518BEB2AF0034545D /* HGDragView.m */,
-				4D712C6618BEB2AF0034545D /* HGDragViewRightToLeftStrategy.h */,
-				4D712C6718BEB2AF0034545D /* HGDragViewRightToLeftStrategy.m */,
 			);
 			path = HGDragView;
 			sourceTree = "<group>";
@@ -533,7 +526,6 @@
 				4D712C9618BEB2AF0034545D /* HGTextView.m in Sources */,
 				4D712CA218BEB4A00034545D /* UIColor+HGAdditionals.m in Sources */,
 				4D712C8E18BEB2AF0034545D /* HGMenu.m in Sources */,
-				4D712C8D18BEB2AF0034545D /* HGDragViewRightToLeftStrategy.m in Sources */,
 				4D712C9018BEB2AF0034545D /* HGRingChart.m in Sources */,
 				4D712C9418BEB2AF0034545D /* HGTableViewController.m in Sources */,
 				4D712C9118BEB2AF0034545D /* HGSearchBar.m in Sources */,
