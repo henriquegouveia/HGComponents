@@ -46,6 +46,12 @@
 		4D712C9818BEB2AF0034545D /* HGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C8818BEB2AF0034545D /* HGWebView.m */; };
 		4D712CA218BEB4A00034545D /* UIColor+HGAdditionals.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712CA118BEB4A00034545D /* UIColor+HGAdditionals.m */; };
 		4D712CAB18BEB7E20034545D /* HGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712CAA18BEB7E20034545D /* HGTableViewCell.m */; };
+		4D74D5D3193D16260055B200 /* HGImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D74D5D2193D16260055B200 /* HGImageView.m */; };
+		4D74D5DF193D18170055B200 /* EHDragOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D74D5D6193D18170055B200 /* EHDragOutView.m */; };
+		4D74D5E0193D18170055B200 /* EHDragOutViewBottomToTopStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D74D5D8193D18170055B200 /* EHDragOutViewBottomToTopStrategy.m */; };
+		4D74D5E1193D18170055B200 /* EHDragOutViewLeftToRightStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D74D5DA193D18170055B200 /* EHDragOutViewLeftToRightStrategy.m */; };
+		4D74D5E2193D18170055B200 /* EHDragOutViewRightToLeftStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D74D5DC193D18170055B200 /* EHDragOutViewRightToLeftStrategy.m */; };
+		4D74D5E3193D18170055B200 /* EHDragOutViewTopToBottomStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D74D5DE193D18170055B200 /* EHDragOutViewTopToBottomStrategy.m */; };
 		4DACD00018C02325008437C2 /* UIView+HGAdditionals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D04190618C01440009D17E4 /* UIView+HGAdditionals.h */; };
 		4DACD00118C02325008437C2 /* UIColor+HGAdditionals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712CA018BEB4A00034545D /* UIColor+HGAdditionals.h */; };
 		4DACD00218C02325008437C2 /* HGTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712CA918BEB7E20034545D /* HGTableViewCell.h */; };
@@ -152,6 +158,18 @@
 		4D712CA118BEB4A00034545D /* UIColor+HGAdditionals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HGAdditionals.m"; sourceTree = "<group>"; };
 		4D712CA918BEB7E20034545D /* HGTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGTableViewCell.h; sourceTree = "<group>"; };
 		4D712CAA18BEB7E20034545D /* HGTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGTableViewCell.m; sourceTree = "<group>"; };
+		4D74D5D1193D16260055B200 /* HGImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HGImageView.h; path = HGImageView/HGImageView.h; sourceTree = "<group>"; };
+		4D74D5D2193D16260055B200 /* HGImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HGImageView.m; path = HGImageView/HGImageView.m; sourceTree = "<group>"; };
+		4D74D5D5193D18170055B200 /* EHDragOutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHDragOutView.h; sourceTree = "<group>"; };
+		4D74D5D6193D18170055B200 /* EHDragOutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHDragOutView.m; sourceTree = "<group>"; };
+		4D74D5D7193D18170055B200 /* EHDragOutViewBottomToTopStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHDragOutViewBottomToTopStrategy.h; sourceTree = "<group>"; };
+		4D74D5D8193D18170055B200 /* EHDragOutViewBottomToTopStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHDragOutViewBottomToTopStrategy.m; sourceTree = "<group>"; };
+		4D74D5D9193D18170055B200 /* EHDragOutViewLeftToRightStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHDragOutViewLeftToRightStrategy.h; sourceTree = "<group>"; };
+		4D74D5DA193D18170055B200 /* EHDragOutViewLeftToRightStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHDragOutViewLeftToRightStrategy.m; sourceTree = "<group>"; };
+		4D74D5DB193D18170055B200 /* EHDragOutViewRightToLeftStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHDragOutViewRightToLeftStrategy.h; sourceTree = "<group>"; };
+		4D74D5DC193D18170055B200 /* EHDragOutViewRightToLeftStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHDragOutViewRightToLeftStrategy.m; sourceTree = "<group>"; };
+		4D74D5DD193D18170055B200 /* EHDragOutViewTopToBottomStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHDragOutViewTopToBottomStrategy.h; sourceTree = "<group>"; };
+		4D74D5DE193D18170055B200 /* EHDragOutViewTopToBottomStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHDragOutViewTopToBottomStrategy.m; sourceTree = "<group>"; };
 		4DEE7F9018C00C2E00973E79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DEE7F9218C00C3200973E79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -225,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				4D712C9E18BEB4A00034545D /* HGUtils */,
+				4D74D5D0193D16080055B200 /* HGImageView */,
 				4D712CA818BEB7E20034545D /* HGTableViewCell */,
 				4D712C7A18BEB2AF0034545D /* HGTableViewController */,
 				4D712C5B18BEB2AF0034545D /* HGAlertView */,
@@ -294,6 +313,7 @@
 		4D712C6318BEB2AF0034545D /* HGDragView */ = {
 			isa = PBXGroup;
 			children = (
+				4D74D5D4193D18170055B200 /* Library */,
 				4D712C6418BEB2AF0034545D /* HGDragView.h */,
 				4D712C6518BEB2AF0034545D /* HGDragView.m */,
 			);
@@ -417,6 +437,32 @@
 			path = HGTableViewCell;
 			sourceTree = "<group>";
 		};
+		4D74D5D0193D16080055B200 /* HGImageView */ = {
+			isa = PBXGroup;
+			children = (
+				4D74D5D1193D16260055B200 /* HGImageView.h */,
+				4D74D5D2193D16260055B200 /* HGImageView.m */,
+			);
+			name = HGImageView;
+			sourceTree = "<group>";
+		};
+		4D74D5D4193D18170055B200 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4D74D5D5193D18170055B200 /* EHDragOutView.h */,
+				4D74D5D6193D18170055B200 /* EHDragOutView.m */,
+				4D74D5D7193D18170055B200 /* EHDragOutViewBottomToTopStrategy.h */,
+				4D74D5D8193D18170055B200 /* EHDragOutViewBottomToTopStrategy.m */,
+				4D74D5D9193D18170055B200 /* EHDragOutViewLeftToRightStrategy.h */,
+				4D74D5DA193D18170055B200 /* EHDragOutViewLeftToRightStrategy.m */,
+				4D74D5DB193D18170055B200 /* EHDragOutViewRightToLeftStrategy.h */,
+				4D74D5DC193D18170055B200 /* EHDragOutViewRightToLeftStrategy.m */,
+				4D74D5DD193D18170055B200 /* EHDragOutViewTopToBottomStrategy.h */,
+				4D74D5DE193D18170055B200 /* EHDragOutViewTopToBottomStrategy.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -517,20 +563,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D712C8918BEB2AF0034545D /* HGAlertView.m in Sources */,
+				4D74D5D3193D16260055B200 /* HGImageView.m in Sources */,
 				4D712C8F18BEB2AF0034545D /* HGPagingScroll.m in Sources */,
 				4D712C9818BEB2AF0034545D /* HGWebView.m in Sources */,
 				4D712C9518BEB2AF0034545D /* HGTextField.m in Sources */,
 				4D712CAB18BEB7E20034545D /* HGTableViewCell.m in Sources */,
+				4D74D5E2193D18170055B200 /* EHDragOutViewRightToLeftStrategy.m in Sources */,
 				4D712C9218BEB2AF0034545D /* HGSlider.m in Sources */,
 				4D04190818C01440009D17E4 /* UIView+HGAdditionals.m in Sources */,
+				4D74D5E3193D18170055B200 /* EHDragOutViewTopToBottomStrategy.m in Sources */,
 				4D712C9618BEB2AF0034545D /* HGTextView.m in Sources */,
 				4D712CA218BEB4A00034545D /* UIColor+HGAdditionals.m in Sources */,
 				4D712C8E18BEB2AF0034545D /* HGMenu.m in Sources */,
 				4D712C9018BEB2AF0034545D /* HGRingChart.m in Sources */,
 				4D712C9418BEB2AF0034545D /* HGTableViewController.m in Sources */,
+				4D74D5E0193D18170055B200 /* EHDragOutViewBottomToTopStrategy.m in Sources */,
 				4D712C9118BEB2AF0034545D /* HGSearchBar.m in Sources */,
 				4D712C8A18BEB2AF0034545D /* HGButton.m in Sources */,
 				4D712C8B18BEB2AF0034545D /* HGMenuButton.m in Sources */,
+				4D74D5DF193D18170055B200 /* EHDragOutView.m in Sources */,
+				4D74D5E1193D18170055B200 /* EHDragOutViewLeftToRightStrategy.m in Sources */,
 				4D712C8C18BEB2AF0034545D /* HGDragView.m in Sources */,
 				4D712C9718BEB2AF0034545D /* HGView.m in Sources */,
 			);

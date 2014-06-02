@@ -1,0 +1,569 @@
+THGComponents
+v6
+r1
+cCheck dependencies
+cProcessPCH /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch.pch HGComponents/HGComponents-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGAlertView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGAlertView/HGAlertView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGImageView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGImageView/HGImageView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGPagingScroll.o /Users/gouveia/Documents/HGComponents/HGComponents/HGPagingScroll/HGPagingScroll.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGWebView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGWebView/HGWebView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextField.o /Users/gouveia/Documents/HGComponents/HGComponents/HGTextField/HGTextField.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewCell.o /Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewCell/HGTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSlider.o /Users/gouveia/Documents/HGComponents/HGComponents/HGSlider/HGSlider.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIView+HGAdditionals.o /Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGTextView/HGTextView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIColor+HGAdditionals.o /Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenu.o /Users/gouveia/Documents/HGComponents/HGComponents/HGMenu/HGMenu.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGRingChart.o /Users/gouveia/Documents/HGComponents/HGComponents/HGRingChart/HGRingChart.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewController.o /Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewController/HGTableViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSearchBar.o /Users/gouveia/Documents/HGComponents/HGComponents/HGSearchBar/HGSearchBar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGButton.o /Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenuButton.o /Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGMenuButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGDragView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGView/HGView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000536F80D200000000000003B4
+t1399816402
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000536F80D9000000000000019E
+t1399816409
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000536F81390000000000000ADC
+t1399816505
+s2780
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGAlertView/HGAlertView.m
+c0000000053860BFC0000000000000229
+t1401293820
+s553
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGButton.m
+c0000000053860BFC00000000000018E5
+t1401293820
+s6373
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGMenuButton.m
+c0000000053860BFC00000000000019A7
+t1401293820
+s6567
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGComponents-Prefix.pch
+c0000000053860BFC00000000000000B6
+t1401293820
+s182
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m
+c0000000053860BFC0000000000000EFE
+t1401293820
+s3838
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGImageView/HGImageView.m
+c00000000538CDF8F000000000000031B
+t1401741199
+s795
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGMenu/HGMenu.m
+c0000000053860BFC00000000000005B0
+t1401293820
+s1456
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGPagingScroll/HGPagingScroll.m
+c0000000053860BFC0000000000000232
+t1401293820
+s562
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGRingChart/HGRingChart.m
+c0000000053860BFC0000000000000D8A
+t1401293820
+s3466
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGSearchBar/HGSearchBar.m
+c0000000053860BFC0000000000000229
+t1401293820
+s553
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGSlider/HGSlider.m
+c0000000053860BFC000000000000079F
+t1401293820
+s1951
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewCell/HGTableViewCell.m
+c0000000053860BFC0000000000000273
+t1401293820
+s627
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewController/HGTableViewController.m
+c0000000053860BFC000000000000124D
+t1401293820
+s4685
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGTextField/HGTextField.m
+c0000000053860BFC00000000000002E3
+t1401293820
+s739
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGTextView/HGTextView.m
+c0000000053860BFC0000000000000225
+t1401293820
+s549
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.m
+c0000000053860BFC0000000000000BD6
+t1401293820
+s3030
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.m
+c0000000053860BFC0000000000000696
+t1401293820
+s1686
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGView/HGView.m
+c0000000053860BFC000000000000148C
+t1401293820
+s5260
+
+N/Users/gouveia/Documents/HGComponents/HGComponents/HGWebView/HGWebView.m
+c0000000053860BFC00000000000002DB
+t1401293820
+s731
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGAlertView.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGButton.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGDragView.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGImageView.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenu.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenuButton.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGPagingScroll.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGRingChart.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSearchBar.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSlider.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewCell.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewController.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextField.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextView.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGView.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGWebView.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIColor+HGAdditionals.o
+t2
+s0
+
+N/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIView+HGAdditionals.o
+t2
+s0
+
+N/var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch.pch
+t1401741163
+s114240
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesbbb64b12173db941^08e65c12173db941^---0#1#1#--18"Check dependencies36"AA0DF119-E9B3-4E5F-9A19-1D04295909D5-
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGAlertView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGAlertView/HGAlertView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.366694
+e423434002.460375
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGAlertView.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGAlertView/HGAlertView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGAlertView/HGAlertView.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGAlertView/HGAlertView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGAlertView/HGAlertView.m215"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGAlertView.o HGComponents/HGAlertView/HGAlertView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler463f5e12173db941^cede7512173db941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGAlertView/HGAlertView.m0000000000000000^3542"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGAlertView.o HGComponents/HGAlertView/HGAlertView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGAlertView.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGAlertView.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGAlertView/HGAlertView.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGAlertView.o36"3F7358CF-342C-473C-AB7D-1AC44631C065-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGButton.o /Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.691400
+e423434002.855905
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGButton.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGButton.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGButton.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGButton.h
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.h
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGButton.m206"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGButton.o HGComponents/HGButton/HGButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler88b8b112173db941^2044f612173db941^---0#0#1#-19%DVTDocumentLocation2@77"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGButton.m0000000000000000^3518"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGButton.o HGComponents/HGButton/HGButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGButton.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGButton.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGButton.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGButton.o36"43036B2D-C5E3-4A07-BB87-387C3150CD1F-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGDragView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.803594
+e423434002.860717
+r0
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGDragView.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m:9:
+o/Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.h:9:9: fatal error: 'EHDragOutView.h' file not found
+o#import "EHDragOutView.h"
+o        ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m212"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGDragView.o HGComponents/HGDragView/HGDragView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler5419ce12173db941^4b78f612173db941^-281"In file included from /Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m:9:/Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.h:9:9: fatal error: 'EHDragOutView.h' file not found#import "EHDragOutView.h"        ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@32"'EHDragOutView.h' file not found-423434002#18446744073709551615#0#1(2@99"In file included from /Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m:9:-423434002#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@81"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m0000000000000000^8#8#8#8#158#0#21"Apple LLVM 5.1 Notice--2#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.h0000000000000000^8#8#8#8#158#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@81"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m0000000000000000^3534"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGDragView.o HGComponents/HGDragView/HGDragView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGDragView.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGDragView.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGDragView/HGDragView.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGDragView.o36"1A88A4BE-87BF-4146-82D8-78FD8ABFE03D-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGImageView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGImageView/HGImageView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.366972
+e423434002.478894
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGImageView.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGImageView/HGImageView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGImageView/HGImageView.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGImageView/HGImageView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGImageView/HGImageView.m215"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGImageView.o HGComponents/HGImageView/HGImageView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6f495e12173db941^f3547b12173db941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGImageView/HGImageView.m0000000000000000^3542"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGImageView.o HGComponents/HGImageView/HGImageView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGImageView.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGImageView.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGImageView/HGImageView.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGImageView.o36"2A1CC95F-749B-4B25-9187-665C8217D80C-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenu.o /Users/gouveia/Documents/HGComponents/HGComponents/HGMenu/HGMenu.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.578658
+e423434002.691043
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenu.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGMenu/HGMenu.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGMenu/HGMenu.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGMenu/HGMenu.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGMenu/HGMenu.m200"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenu.o HGComponents/HGMenu/HGMenu.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera59f9412173db941^5c05b112173db941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGMenu/HGMenu.m0000000000000000^3502"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenu.o HGComponents/HGMenu/HGMenu.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenu.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenu.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGMenu/HGMenu.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenu.o36"A3BCA722-36B5-493A-B20F-B22DA4A014CE-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenuButton.o /Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGMenuButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.712057
+e423434002.962074
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenuButton.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGMenuButton.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGMenuButton.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGMenuButton.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGMenuButton.m214"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenuButton.o HGComponents/HGButton/HGMenuButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler8ba7b612173db941^787df612173db941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGMenuButton.m0000000000000000^3542"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenuButton.o HGComponents/HGButton/HGMenuButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenuButton.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenuButton.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGButton/HGMenuButton.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGMenuButton.o36"3987F3B4-CE1C-4730-8963-38BDBDA130A5-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGPagingScroll.o /Users/gouveia/Documents/HGComponents/HGComponents/HGPagingScroll/HGPagingScroll.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.367328
+e423434002.465209
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGPagingScroll.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGPagingScroll/HGPagingScroll.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGPagingScroll/HGPagingScroll.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGPagingScroll/HGPagingScroll.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGPagingScroll/HGPagingScroll.m224"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGPagingScroll.o HGComponents/HGPagingScroll/HGPagingScroll.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler2b685e12173db941^cd1f7712173db941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGPagingScroll/HGPagingScroll.m0000000000000000^3566"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGPagingScroll.o HGComponents/HGPagingScroll/HGPagingScroll.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGPagingScroll.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGPagingScroll.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGPagingScroll/HGPagingScroll.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGPagingScroll.o36"02FEC8E6-7FD7-47DC-A8BF-43861772788C-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGRingChart.o /Users/gouveia/Documents/HGComponents/HGComponents/HGRingChart/HGRingChart.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.588310
+e423434002.711276
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGRingChart.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGRingChart/HGRingChart.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGRingChart/HGRingChart.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGRingChart/HGRingChart.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGRingChart/HGRingChart.m215"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGRingChart.o HGComponents/HGRingChart/HGRingChart.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler51f69612173db941^8482b612173db941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGRingChart/HGRingChart.m0000000000000000^3542"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGRingChart.o HGComponents/HGRingChart/HGRingChart.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGRingChart.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGRingChart.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGRingChart/HGRingChart.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGRingChart.o36"E19F5885-ACC1-472C-AAA3-E218F61A5684-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSearchBar.o /Users/gouveia/Documents/HGComponents/HGComponents/HGSearchBar/HGSearchBar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.665920
+e423434002.801746
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSearchBar.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGSearchBar/HGSearchBar.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGSearchBar/HGSearchBar.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGSearchBar/HGSearchBar.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGSearchBar/HGSearchBar.m215"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSearchBar.o HGComponents/HGSearchBar/HGSearchBar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6e16ab12173db941^3753cd12173db941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGSearchBar/HGSearchBar.m0000000000000000^3542"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSearchBar.o HGComponents/HGSearchBar/HGSearchBar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSearchBar.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSearchBar.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGSearchBar/HGSearchBar.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSearchBar.o36"C9605C89-0A77-4ABA-84AE-086EB150CF90-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSlider.o /Users/gouveia/Documents/HGComponents/HGComponents/HGSlider/HGSlider.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.470002
+e423434002.587489
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSlider.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGSlider/HGSlider.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGSlider/HGSlider.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGSlider/HGSlider.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGSlider/HGSlider.m206"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSlider.o HGComponents/HGSlider/HGSlider.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler25ad7812173db941^e90e9a12173db941^---0#0#1#-19%DVTDocumentLocation2@77"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGSlider/HGSlider.m0000000000000000^3518"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSlider.o HGComponents/HGSlider/HGSlider.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSlider.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSlider.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGSlider/HGSlider.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGSlider.o36"5C90D42B-6CB3-4CA2-9310-6E21DA98E5BB-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewCell.o /Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewCell/HGTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.465473
+e423434002.566781
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewCell.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewCell/HGTableViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewCell/HGTableViewCell.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewCell/HGTableViewCell.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewCell/HGTableViewCell.m227"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewCell.o HGComponents/HGTableViewCell/HGTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler68b27712173db941^6f469112173db941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewCell/HGTableViewCell.m0000000000000000^3574"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewCell.o HGComponents/HGTableViewCell/HGTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewCell.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewCell.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewCell/HGTableViewCell.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewCell.o36"A1966E4F-F1E1-49E5-9BD8-28786C0B06FF-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewController.o /Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewController/HGTableViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.660761
+e423434002.850579
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewController.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewController/HGTableViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewController/HGTableViewController.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewController/HGTableViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewController/HGTableViewController.m245"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewController.o HGComponents/HGTableViewController/HGTableViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1f83a912173db941^54c4d912173db941^---0#0#1#-19%DVTDocumentLocation2@103"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewController/HGTableViewController.m0000000000000000^3622"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewController.o HGComponents/HGTableViewController/HGTableViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewController.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewController.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGTableViewController/HGTableViewController.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTableViewController.o36"F2862B35-C6D5-4F4F-9367-520EC891DFFA-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextField.o /Users/gouveia/Documents/HGComponents/HGComponents/HGTextField/HGTextField.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.460757
+e423434002.567509
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextField.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGTextField/HGTextField.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGTextField/HGTextField.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGTextField/HGTextField.h
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGTextField/HGTextField.m215"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextField.o HGComponents/HGTextField/HGTextField.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler00537612173db941^ddcf9112173db941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGTextField/HGTextField.m0000000000000000^3542"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextField.o HGComponents/HGTextField/HGTextField.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextField.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextField.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGTextField/HGTextField.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextField.o36"67E38090-BD84-40E9-9AAE-3EC9D4AED6D0-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGTextView/HGTextView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.567235
+e423434002.660502
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextView.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGTextView/HGTextView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGTextView/HGTextView.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGTextView/HGTextView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGTextView/HGTextView.m212"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextView.o HGComponents/HGTextView/HGTextView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd0989112173db941^d655a912173db941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGTextView/HGTextView.m0000000000000000^3534"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextView.o HGComponents/HGTextView/HGTextView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextView.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextView.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGTextView/HGTextView.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGTextView.o36"B0F6EA76-0997-44BC-9AB9-B3B4BB6BA40B-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGView/HGView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.850945
+e423434003.065573
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGView.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGView/HGView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGView/HGView.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGView/HGView.h
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGView/HGView.m200"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGView.o HGComponents/HGView/HGView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler8335da12173db941^b0cb1013173db941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGView/HGView.m0000000000000000^3502"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGView.o HGComponents/HGView/HGView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGView.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGView.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGView/HGView.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGView.o36"FD5D636B-29CE-4051-BA67-938C89CFE266-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGWebView.o /Users/gouveia/Documents/HGComponents/HGComponents/HGWebView/HGWebView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.368367
+e423434002.468824
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGWebView.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGWebView/HGWebView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGWebView/HGWebView.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGWebView/HGWebView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGWebView/HGWebView.m209"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGWebView.o HGComponents/HGWebView/HGWebView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler3db95e12173db941^81207812173db941^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGWebView/HGWebView.m0000000000000000^3526"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGWebView.o HGComponents/HGWebView/HGWebView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGWebView.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGWebView.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGWebView/HGWebView.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/HGWebView.o36"582DEEA0-CE79-468C-9E3A-FEF510C0CCEB-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIColor+HGAdditionals.o /Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.568091
+e423434002.665374
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIColor+HGAdditionals.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.m253"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIColor+HGAdditionals.o HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd7169212173db941^83a5aa12173db941^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.m0000000000000000^3638"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIColor+HGAdditionals.o HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIColor+HGAdditionals.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIColor+HGAdditionals.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIColor+HGAdditionals.o36"C2E480C4-ED92-4AC3-A79D-FB0EE8A6307C-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CCompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIView+HGAdditionals.o /Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s423434002.479648
+e423434002.578366
+r1
+xCompileC
+xbuild/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIView+HGAdditionals.o
+x/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.m
+d/Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.m250"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIView+HGAdditionals.o HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler8e227b12173db941^93909412173db941^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.m0000000000000000^3630"CompileC build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIView+HGAdditionals.o HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gouveia/Documents/HGComponents    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-generated-files.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-own-target-headers.hmap -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-all-target-headers.hmap -iquote /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/HGComponents-project-headers.hmap -I/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources/i386 -I/Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/DerivedSources -F/Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator -include /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch -MMD -MT dependencies -MF /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIView+HGAdditionals.d --serialize-diagnostics /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIView+HGAdditionals.dia -c /Users/gouveia/Documents/HGComponents/HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.m -o /Users/gouveia/Documents/HGComponents/build/HGComponents.build/Debug-iphonesimulator/HGComponents.build/Objects-normal/i386/UIView+HGAdditionals.o36"0ECDBBD6-659E-4E24-B238-DA61204CC520-
+bEDD56210-5F5B-4AA7-AE90-B87A4DDE5A9E
+
+CLibtool /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/libHGComponents.a normal i386
+r0
+
+CPBXCp HGComponents/HGAlertView/HGAlertView.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGAlertView.h
+r0
+
+CPBXCp HGComponents/HGButton/HGButton.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGButton.h
+r0
+
+CPBXCp HGComponents/HGButton/HGMenuButton.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGMenuButton.h
+r0
+
+CPBXCp HGComponents/HGComponents.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGComponents.h
+r0
+
+CPBXCp HGComponents/HGDragView/HGDragView.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGDragView.h
+r0
+
+CPBXCp HGComponents/HGMenu/HGMenu.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGMenu.h
+r0
+
+CPBXCp HGComponents/HGPagingScroll/HGPagingScroll.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGPagingScroll.h
+r0
+
+CPBXCp HGComponents/HGRingChart/HGRingChart.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGRingChart.h
+r0
+
+CPBXCp HGComponents/HGSearchBar/HGSearchBar.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGSearchBar.h
+r0
+
+CPBXCp HGComponents/HGSlider/HGSlider.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGSlider.h
+r0
+
+CPBXCp HGComponents/HGTableViewCell/HGTableViewCell.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGTableViewCell.h
+r0
+
+CPBXCp HGComponents/HGTableViewController/HGTableViewController.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGTableViewController.h
+r0
+
+CPBXCp HGComponents/HGTextField/HGTextField.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGTextField.h
+r0
+
+CPBXCp HGComponents/HGTextView/HGTextView.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGTextView.h
+r0
+
+CPBXCp HGComponents/HGUtils/UIColor+HGAdditionals/UIColor+HGAdditionals.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/UIColor+HGAdditionals.h
+r0
+
+CPBXCp HGComponents/HGUtils/UIView+HGAdditionals/UIView+HGAdditionals.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/UIView+HGAdditionals.h
+r0
+
+CPBXCp HGComponents/HGView/HGView.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGView.h
+r0
+
+CPBXCp HGComponents/HGWebView/HGWebView.h /Users/gouveia/Library/Developer/Xcode/DerivedData/HGComponents-fpwvgxfkyabsxgdhdibeznrqvkdy/Build/Products/Debug-iphonesimulator/include/HGComponents/HGWebView.h
+r0
+
+CProcessPCH /var/folders/5g/pb_7zvxs1k96k2gp4xd_t2pc0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HGComponents-Prefix-bsheohiuwwnxtlhbwwjaiexcdkmp/HGComponents-Prefix.pch.pch HGComponents/HGComponents-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+

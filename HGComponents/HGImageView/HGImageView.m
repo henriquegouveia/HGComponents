@@ -8,6 +8,14 @@
 
 #import "HGImageView.h"
 
+@interface HGImageView ()
+
+@property (assign) BOOL isCircularImageWithBorder;
+@property (weak, nonatomic) UIColor *borderColor;
+@property (assign) CGFloat borderWidth;
+
+@end
+
 @implementation HGImageView
 
 - (id)initWithFrame:(CGRect)frame
@@ -19,13 +27,29 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)awakeFromNib
 {
-    // Drawing code
+    [super awakeFromNib];
+    [self _setup];
 }
-*/
+
+- (void)_setup
+{
+    [self roundImageWithBorderColorAndWidth];
+}
+
+- (void)roundImageWithBorderColorAndWidth
+{
+    if (self.isCircularImageWithBorder)
+    {
+        CGFloat radius = (self.frame.size.width / 2);
+        
+        [self.layer setCornerRadius:radius];
+        [self.layer setMasksToBounds:YES];
+    }
+    
+    [self.layer setBorderWidth:self.borderWidth];
+    [self.layer setBorderColor:[self.borderColor CGColor]];
+}
 
 @end
