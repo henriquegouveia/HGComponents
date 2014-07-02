@@ -167,9 +167,9 @@
 
 - (void)drawLines
 {
-    self.lineOne = [[UIView alloc] init];
-    self.lineTwo = [[UIView alloc] init];
-    self.lineThree = [[UIView alloc] init];
+    self.lineOne = [UIView new];
+    self.lineTwo = [UIView new];
+    self.lineThree = [UIView new];
     
     if (!_heightLines) {
         _heightLines = self.frame.size.height/7;

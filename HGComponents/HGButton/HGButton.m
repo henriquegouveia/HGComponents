@@ -34,6 +34,9 @@ const NSString *kShadowOffset = @"kShadowOffset";
 @property (assign, nonatomic) CGFloat radius;
 @property (assign, nonatomic) CGFloat backgroundAlpha;
 
+@property (nonatomic) CGFloat borderWidth;
+@property (weak, nonatomic) UIColor *borderColor;
+
 @end
 
 @implementation HGButton
@@ -49,6 +52,29 @@ const NSString *kShadowOffset = @"kShadowOffset";
 
     if (_customBackgroundColor)
         [self backgroundColorWithAlpha:_customBackgroundColor alpha:_backgroundAlpha];
+    
+    [self _setup];
+}
+
+- (void)_setup
+{
+    [self _setupBorder];
+}
+
+- (void)_setupBorder
+{
+    CALayer *layer = [CALayer new];
+    
+    [layer setAnchorPoint:CGPointMake(0.5f, 0.5f)];
+    [layer setFrame:CGRectMake(9.0f, 10.0f, (self.radius * 2), (self.radius * 2))];
+    
+    [layer setBorderWidth:self.borderWidth];
+    [layer setBorderColor:self.borderColor.CGColor];
+    [layer setBackgroundColor:[[UIColor clearColor] CGColor]];
+    [layer setMasksToBounds:YES];
+    [layer setCornerRadius:self.radius];
+    
+    [self.layer addSublayer:layer];
 }
 
 - (id)initWithFrame:(CGRect)frame withProperties:(NSDictionary *)properties
