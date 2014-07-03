@@ -71,6 +71,9 @@
 		4DACD01118C02325008437C2 /* HGWebView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C8718BEB2AF0034545D /* HGWebView.h */; };
 		4DEE7F9118C00C2E00973E79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE7F9018C00C2E00973E79 /* UIKit.framework */; };
 		4DEE7F9318C00C3200973E79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE7F9218C00C3200973E79 /* QuartzCore.framework */; };
+		4DF2982E1965A62D0056B284 /* HGProgressCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF298281965A62D0056B284 /* HGProgressCircle.m */; };
+		4DF2982F1965A62D0056B284 /* HGProgressLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2982A1965A62D0056B284 /* HGProgressLine.m */; };
+		4DF298301965A62D0056B284 /* HGStepsMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2982D1965A62D0056B284 /* HGStepsMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +175,13 @@
 		4D74D5DE193D18170055B200 /* EHDragOutViewTopToBottomStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHDragOutViewTopToBottomStrategy.m; sourceTree = "<group>"; };
 		4DEE7F9018C00C2E00973E79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DEE7F9218C00C3200973E79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4DF298271965A62D0056B284 /* HGProgressCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGProgressCircle.h; sourceTree = "<group>"; };
+		4DF298281965A62D0056B284 /* HGProgressCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGProgressCircle.m; sourceTree = "<group>"; };
+		4DF298291965A62D0056B284 /* HGProgressLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGProgressLine.h; sourceTree = "<group>"; };
+		4DF2982A1965A62D0056B284 /* HGProgressLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGProgressLine.m; sourceTree = "<group>"; };
+		4DF2982B1965A62D0056B284 /* HGStepCompletinoBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGStepCompletinoBlock.h; sourceTree = "<group>"; };
+		4DF2982C1965A62D0056B284 /* HGStepsMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGStepsMenu.h; sourceTree = "<group>"; };
+		4DF2982D1965A62D0056B284 /* HGStepsMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGStepsMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +252,7 @@
 		4D712C3718BEB22A0034545D /* HGComponents */ = {
 			isa = PBXGroup;
 			children = (
+				4DF298261965A62D0056B284 /* HGStepsMenu */,
 				4D712C9E18BEB4A00034545D /* HGUtils */,
 				4D74D5D0193D16080055B200 /* HGImageView */,
 				4D712CA818BEB7E20034545D /* HGTableViewCell */,
@@ -463,6 +474,20 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		4DF298261965A62D0056B284 /* HGStepsMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4DF298271965A62D0056B284 /* HGProgressCircle.h */,
+				4DF298281965A62D0056B284 /* HGProgressCircle.m */,
+				4DF298291965A62D0056B284 /* HGProgressLine.h */,
+				4DF2982A1965A62D0056B284 /* HGProgressLine.m */,
+				4DF2982B1965A62D0056B284 /* HGStepCompletinoBlock.h */,
+				4DF2982C1965A62D0056B284 /* HGStepsMenu.h */,
+				4DF2982D1965A62D0056B284 /* HGStepsMenu.m */,
+			);
+			path = HGStepsMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -565,6 +590,7 @@
 				4D712C8918BEB2AF0034545D /* HGAlertView.m in Sources */,
 				4D74D5D3193D16260055B200 /* HGImageView.m in Sources */,
 				4D712C8F18BEB2AF0034545D /* HGPagingScroll.m in Sources */,
+				4DF2982E1965A62D0056B284 /* HGProgressCircle.m in Sources */,
 				4D712C9818BEB2AF0034545D /* HGWebView.m in Sources */,
 				4D712C9518BEB2AF0034545D /* HGTextField.m in Sources */,
 				4D712CAB18BEB7E20034545D /* HGTableViewCell.m in Sources */,
@@ -580,9 +606,11 @@
 				4D74D5E0193D18170055B200 /* EHDragOutViewBottomToTopStrategy.m in Sources */,
 				4D712C9118BEB2AF0034545D /* HGSearchBar.m in Sources */,
 				4D712C8A18BEB2AF0034545D /* HGButton.m in Sources */,
+				4DF2982F1965A62D0056B284 /* HGProgressLine.m in Sources */,
 				4D712C8B18BEB2AF0034545D /* HGMenuButton.m in Sources */,
 				4D74D5DF193D18170055B200 /* EHDragOutView.m in Sources */,
 				4D74D5E1193D18170055B200 /* EHDragOutViewLeftToRightStrategy.m in Sources */,
+				4DF298301965A62D0056B284 /* HGStepsMenu.m in Sources */,
 				4D712C8C18BEB2AF0034545D /* HGDragView.m in Sources */,
 				4D712C9718BEB2AF0034545D /* HGView.m in Sources */,
 			);

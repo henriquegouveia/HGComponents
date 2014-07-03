@@ -88,24 +88,27 @@
         [self setUserInteractionEnabled:NO];
         
         [UIView animateWithDuration:0.18f delay:0.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            self.lineOne.frame = CGRectMake((self.frame.size.width - _widthLines)/2,
-                                            _heightLines * 2 + _heightLines/1.5,
-                                            _widthLines/2,
-                                            _heightLines);
             
-            self.lineTwo.frame = CGRectMake((self.frame.size.width - _widthLines)/2,
-                                            _heightLines * 3 + (_heightLines/4),
-                                            _widthLines/1.5,
-                                            _heightLines);
+            self.lineOne.frame = CGRectMake(self.lineOne.frame.origin.x,
+                                            self.lineOne.frame.origin.y + self.gapBetweenLines,
+                                            (self.lineOne.frame.size.width/3),
+                                            self.lineOne.frame.size.height);
             
-            self.lineThree.frame = CGRectMake((self.frame.size.width - _widthLines)/2,
-                                              _heightLines * 3 + _heightLines/1.2,
-                                              _widthLines/2,
-                                              _heightLines);
+            self.lineTwo.frame = CGRectMake(self.lineTwo.frame.origin.x,
+                                              self.lineTwo.frame.origin.y,
+                                              (self.lineTwo.frame.size.width/3*2),
+                                              self.lineTwo.frame.size.height);
+
+            
+            self.lineThree.frame = CGRectMake(self.lineThree.frame.origin.x,
+                                            self.lineThree.frame.origin.y - self.gapBetweenLines,
+                                            (self.lineThree.frame.size.width/3),
+                                            self.lineThree.frame.size.height);
+            
+            self.lineOne.transform = CGAffineTransformMakeRotation(-45.0f * M_PI / 180.0f);
+            self.lineThree.transform = CGAffineTransformMakeRotation(45.0f * M_PI / 180.0f);
         } completion:^(BOOL finished) {
-            self.lineOne.transform = CGAffineTransformMakeRotation(M_PI/-(_widthLines / _heightLines));
-            self.lineThree.transform = CGAffineTransformMakeRotation(M_PI/(_widthLines / _heightLines));
-            
+
             [self setUserInteractionEnabled:YES];
         }];
     }
@@ -118,25 +121,27 @@
     if (!self.isOpen) {
         [self setUserInteractionEnabled:NO];
         
-        self.lineOne.transform = CGAffineTransformMakeRotation(M_PI);
-        self.lineThree.transform = CGAffineTransformMakeRotation(M_PI);
+        self.lineOne.transform = CGAffineTransformIdentity;
+        self.lineThree.transform = CGAffineTransformIdentity;
         
         [UIView animateWithDuration:0.18f delay:0.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
             
             self.lineOne.frame = CGRectMake((self.frame.size.width - _widthLines)/2,
-                                            _heightLines,
+                                            _heightLines + 2 * self.gapBetweenLines,
                                             _widthLines,
                                             _heightLines);
             
             self.lineTwo.frame = CGRectMake((self.frame.size.width - _widthLines)/2,
-                                            _heightLines * 3,
+                                            _heightLines + 4 * self.gapBetweenLines,
                                             _widthLines,
                                             _heightLines);
             
             self.lineThree.frame = CGRectMake((self.frame.size.width - _widthLines)/2,
-                                              _heightLines * 5,
+                                              _heightLines + 6 * self.gapBetweenLines,
                                               _widthLines,
                                               _heightLines);
+
+            
         } completion:^(BOOL finished) {
             [self setUserInteractionEnabled:YES];
         }];
@@ -167,35 +172,31 @@
 
 - (void)drawLines
 {
-    self.lineOne = [UIView new];
-    self.lineTwo = [UIView new];
-    self.lineThree = [UIView new];
+    self.lineOne = [[UIView alloc] init];
+    self.lineTwo = [[UIView alloc] init];
+    self.lineThree = [[UIView alloc] init];
     
-    if (!_heightLines) {
-        _heightLines = self.frame.size.height/7;
-    }
-    
-    if (!_widthLines) {
-        CGFloat percentage = 80.0f/100.0f;
-        _widthLines = self.frame.size.width * percentage;
-    }
+    _heightLines = self.frame.size.height/20;
+    CGFloat percentage = 60.0f/100.0f;
+    _widthLines = self.frame.size.width * percentage;
+    self.gapBetweenLines = 4;
     
     if (self.isOpen) {
         
     } else {
         
         self.lineOne.frame = CGRectMake((self.frame.size.width - _widthLines)/2,
-                                        _heightLines,
+                                        _heightLines + 2 * self.gapBetweenLines,
                                         _widthLines,
                                         _heightLines);
         
         self.lineTwo.frame = CGRectMake((self.frame.size.width - _widthLines)/2,
-                                        _heightLines * 3,
+                                        _heightLines + 4 * self.gapBetweenLines,
                                         _widthLines,
                                         _heightLines);
         
         self.lineThree.frame = CGRectMake((self.frame.size.width - _widthLines)/2,
-                                          _heightLines * 5,
+                                          _heightLines + 6 * self.gapBetweenLines,
                                           _widthLines,
                                           _heightLines);
 

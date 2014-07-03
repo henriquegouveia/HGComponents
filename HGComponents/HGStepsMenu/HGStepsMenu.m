@@ -26,7 +26,7 @@
 {
     [super awakeFromNib];
     
-    NSAssert((((self.steps * 2) * self.frame.size.height) < self.frame.size.width), @"Some steps won't appear because your width is not enough");
+    NSAssert((((self.steps * 2) * self.frame.size.height) < self.frame.size.width), @"Some steps won't appear because its width is not enough");
     
     self.lineWidth = 2.0f;
     self.velocity = 0.001f;
