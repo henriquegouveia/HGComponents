@@ -30,6 +30,11 @@
 
 @implementation HGStepsMenu
 
+- (void)startStepsCreation
+{
+    [self createStepsMenus:0];
+}
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];
@@ -38,8 +43,6 @@
     NSAssert((self.steps != self.completedStepsIcons.count) || (self.steps != self.uncompletedStepsIcons.count), @"The quantity of icons is different of steps");
     
     self.steps -= 1;
-    
-    [self createStepsMenus:0];
 }
 
 - (void)doneStep:(NSInteger)step
@@ -91,7 +94,7 @@
                                                                  lineWidth:self.lineWidth
                                                                  imageName:imageName
                                                                     colors:colors
-                                                               forDuration:0.0004
+                                                               forDuration:0.0001
                                                        withCompletionBlock:^(BOOL status) {
                                                            completion(YES);
                                                        }];
@@ -109,7 +112,7 @@
                                                                                 self.frame.size.height)
                                                            lineWidth:self.lineWidth
                                                                colors:colors
-                                                         forDuration:0.0004
+                                                         forDuration:0.0001
                                                  withCompletionBlock:^(BOOL status) {
                                                      completion(YES);
                                                  }];
