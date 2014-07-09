@@ -18,6 +18,7 @@
 @property (strong, nonatomic) NSTimer *timer;
 
 @property (copy, nonatomic) UIColor *color;
+@property (copy, nonatomic) NSArray *gradientColors;
 @property (copy, nonatomic) NSString *imageName;
 @property (copy, nonatomic) HGStepCompletinoBlock completion;
 
@@ -27,7 +28,7 @@
 
 - (id)initWithFrame:(CGRect)frame lineWidth:(CGFloat)lineWidth
           imageName:(NSString *)imageName
-              color:(UIColor *)color
+     colors:(NSArray *)colors
         forDuration:(CGFloat)duration
 withCompletionBlock:(HGStepCompletinoBlock)completion
 {
@@ -39,9 +40,10 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
         _completion = completion;
         _duration = duration;
         _lineWidth = lineWidth;
-        _color = color;
+        _gradientColors = colors;
+        _imageName = imageName;
         
-        self.backgroundColor = [UIColor clearColor];
+        [self setBackgroundColor:[UIColor clearColor]];
         
         [self startAnimation];
     }
@@ -53,22 +55,34 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
 {
     [super drawRect:rect];
     
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    
+    NSArray *gradientColors = self.gradientColors;
+    CGFloat gradientLocations[] = {0.0f, 1.0f};
+    CGGradientRef gradient = CGGradientCreateWithColors(colorspace, (CFArrayRef)gradientColors, gradientLocations);
+    
     CGFloat circleStartAngle = (180.0f * M_PI) / 180.0f;
     CGFloat progressCircleEndAngle = (self.count * M_PI) / 180.0f;
     
     CGFloat lineWidth = ((self.frame.size.height / 2) - self.lineWidth);
-    
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetStrokeColorWithColor(context, self.color.CGColor);
     
     UIBezierPath *progressCircleAbove = [UIBezierPath bezierPathWithArcCenter:self.position
                                                                        radius:lineWidth
                                                                    startAngle:circleStartAngle
                                                                      endAngle:progressCircleEndAngle
                                                                     clockwise:YES];
+
+    CGContextSaveGState(context);
+    CGContextSetLineWidth(context, self.lineWidth);
+    CGContextAddPath(context, progressCircleAbove.CGPath);
+    CGContextReplacePathWithStrokedPath(context);
+    CGContextClip(context);
     
-    progressCircleAbove.lineWidth = 2.0f;
-    [progressCircleAbove stroke];
+    //  Draw a linear gradient from top to bottom
+    CGContextDrawLinearGradient(context, gradient, CGPointMake(0.0f, 0.0f), CGPointMake(self.frame.size.width, 0), 0);
+    
+    CGContextRestoreGState(context);
     
     UIBezierPath *progressCircleBelow = [UIBezierPath bezierPathWithArcCenter:self.position
                                                                        radius:lineWidth
@@ -76,7 +90,18 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
                                                                      endAngle:-progressCircleEndAngle
                                                                     clockwise:NO];
     progressCircleBelow.lineWidth = self.lineWidth;
-    [progressCircleBelow stroke];
+
+    CGContextSaveGState(context);
+    CGContextSetLineWidth(context, self.lineWidth);
+    CGContextAddPath(context, progressCircleBelow.CGPath);
+    CGContextReplacePathWithStrokedPath(context);
+    CGContextClip(context);
+    
+    //  Draw a linear gradient from top to bottom
+    CGContextDrawLinearGradient(context, gradient, CGPointMake(0.0f, 0.0f), CGPointMake(self.frame.size.width, 0), 0);
+    
+    CGContextRestoreGState(context);
+
 }
 
 - (void)startAnimation
@@ -90,11 +115,21 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
     [imageView.layer setAnchorPoint:CGPointMake(0.5f, 0.5f)];
     [imageView setTransform:CGAffineTransformMakeScale(0.01f, 0.01f)];
     
+    CGFloat x = CGRectGetMidX(self.bounds);
+    CGFloat y = CGRectGetMidY(self.bounds);
+    
+    imageView.frame = CGRectMake(x,
+                                 y,
+                                 imageView.frame.size.width,
+                                 imageView.frame.size.height);
+    
+    [self addSubview:imageView];
+    
     [UIView animateWithDuration:0.2f
                           delay:0.0f
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         [imageView setTransform:CGAffineTransformMakeScale(1.2f, 1.2f)];
+                         [imageView setTransform:CGAffineTransformMakeScale(1.5f, 1.5f)];
                      } completion:^(BOOL finished) {
                          [UIView animateWithDuration:0.1f
                                                delay:0.0f
@@ -113,6 +148,7 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
     {
         [self setNeedsDisplay];
     } else {
+        [self showStepIcon];
         self.completion(YES);
         [self.timer invalidate];
         self.timer = nil;

@@ -18,6 +18,14 @@
 @property (nonatomic) CGFloat velocity;
 @property (nonatomic) CGFloat xPosition;
 
+@property (copy, nonatomic) UIColor *firstColor;
+@property (copy, nonatomic) UIColor *secondColor;
+
+@property (copy, nonatomic) NSArray *completedStepsIcons;
+@property (copy, nonatomic) NSArray *uncompletedStepsIcons;
+
+@property (nonatomic) NSInteger stepCompleted;
+
 @end
 
 @implementation HGStepsMenu
@@ -26,14 +34,27 @@
 {
     [super awakeFromNib];
     
-    NSAssert((((self.steps * 2) * self.frame.size.height) < self.frame.size.width), @"Some steps won't appear because its width is not enough");
-    
-    self.lineWidth = 2.0f;
-    self.velocity = 0.001f;
+    NSAssert(((self.steps * self.frame.size.height) < self.frame.size.width), @"Some steps won't appear because your width is not enough");
+    NSAssert((self.steps != self.completedStepsIcons.count) || (self.steps != self.uncompletedStepsIcons.count), @"The quantity of icons is different of steps");
     
     self.steps -= 1;
     
     [self createStepsMenus:0];
+}
+
+- (void)doneStep:(NSInteger)step
+{
+    self.stepCompleted = step;
+}
+
+- (void)setupCompletedIcons:(NSArray *)stepsIcons
+{
+    self.completedStepsIcons = stepsIcons;
+}
+
+- (void)setupUncompletedIcons:(NSArray *)stepsIcons
+{
+    self.uncompletedStepsIcons = stepsIcons;
 }
 
 - (void)createStepsMenus:(NSInteger)step
@@ -41,23 +62,27 @@
     NSInteger __block currentStep = step;
     
     if (step < self.steps) {
-        [self createBallStep:step withCompletionBlock:^(BOOL status) {
+        [self createCircleStep:step withCompletionBlock:^(BOOL status) {
             if (status) {
                 [self createLineStep:step withCompletionBlock:^(BOOL status) {
-                    [self createStepsMenus:(currentStep + 1)];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self createStepsMenus:(currentStep + 1)];
+                    });
                 }];
             }
         }];
     } else {
-        [self createBallStep:step withCompletionBlock:^(BOOL status) {
+        [self createCircleStep:step withCompletionBlock:^(BOOL status) {
             //no completion
         }];
     }
 }
 
-- (void)createBallStep:(NSInteger)step withCompletionBlock:(void(^)(BOOL status))completion
+- (void)createCircleStep:(NSInteger)step withCompletionBlock:(void(^)(BOOL status))completion
 {
-    NSString __weak *imageName = [NSString stringWithFormat:@"%@%d", self.stepImageName, step];
+    NSString __weak *imageName = [self setupImageForStep:step];
+    
+    NSArray *colors = [self setupCircleColorsForNextStep:step];
     
     HGProgressCircle *circleStep = [[HGProgressCircle alloc] initWithFrame:CGRectMake(self.xPosition,
                                                                                       0.0f,
@@ -65,8 +90,8 @@
                                                                                       self.frame.size.height)
                                                                  lineWidth:self.lineWidth
                                                                  imageName:imageName
-                                                                     color:[UIColor blueColor]
-                                                               forDuration:self.velocity
+                                                                    colors:colors
+                                                               forDuration:0.0004
                                                        withCompletionBlock:^(BOOL status) {
                                                            completion(YES);
                                                        }];
@@ -76,13 +101,15 @@
 
 - (void)createLineStep:(NSInteger)step withCompletionBlock:(void(^)(BOOL status))completion
 {
+    NSArray *colors = [self setupLineColorsForNextStep:step];
+    
     HGProgressLine *lineStep = [[HGProgressLine alloc] initWithFrame:CGRectMake(self.xPosition,
                                                                                 0.0f,
                                                                                 self.frame.size.height,
                                                                                 self.frame.size.height)
                                                            lineWidth:self.lineWidth
-                                                               color:[UIColor redColor]
-                                                         forDuration:self.velocity
+                                                               colors:colors
+                                                         forDuration:0.0004
                                                  withCompletionBlock:^(BOOL status) {
                                                      completion(YES);
                                                  }];
@@ -90,5 +117,45 @@
     [self addSubview:lineStep];
 }
 
+- (NSArray *)setupCircleColorsForNextStep:(NSInteger)step
+{
+    NSArray *colors = nil;
+    
+    if (step == self.stepCompleted || step > self.stepCompleted)
+    {
+        colors = @[(id)self.secondColor.CGColor, (id)self.secondColor.CGColor];
+    } else {
+        colors = @[(id)self.firstColor.CGColor, (id)self.firstColor.CGColor];
+    }
+
+    return colors;
+}
+
+- (NSArray *)setupLineColorsForNextStep:(NSInteger)step
+{
+    NSArray *colors = nil;
+    NSInteger nextStep = (step + 1);
+    
+    if (nextStep == self.stepCompleted)
+    {
+        colors = @[(id)self.firstColor.CGColor, (id)self.secondColor.CGColor];
+    } else if (step < self.stepCompleted) {
+        colors = @[(id)self.firstColor.CGColor, (id)self.firstColor.CGColor];
+    } else {
+        colors = @[(id)self.secondColor.CGColor, (id)self.secondColor.CGColor];
+    }
+    
+    return colors;
+}
+
+- (NSString *)setupImageForStep:(NSInteger)step
+{
+    if (step == self.stepCompleted || step > self.stepCompleted)
+    {
+        return [self.uncompletedStepsIcons objectAtIndex:step];
+    } else {
+        return [self.completedStepsIcons objectAtIndex:step];
+    }
+}
 
 @end

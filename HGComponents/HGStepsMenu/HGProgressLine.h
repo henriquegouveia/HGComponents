@@ -13,7 +13,7 @@
 
 - (id)initWithFrame:(CGRect)frame
           lineWidth:(CGFloat)lineWidth
-              color:(UIColor *)color
+              colors:(NSArray *)colors
         forDuration:(CGFloat)duration
 withCompletionBlock:(HGStepCompletinoBlock)completion;
 

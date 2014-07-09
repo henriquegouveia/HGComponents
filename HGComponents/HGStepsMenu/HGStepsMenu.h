@@ -10,4 +10,8 @@
 
 @interface HGStepsMenu : UIView
 
+- (void)setupCompletedIcons:(NSArray *)stepsIcons;
+- (void)setupUncompletedIcons:(NSArray *)stepsIcons;
+- (void)doneStep:(NSInteger)step;
+
 @end

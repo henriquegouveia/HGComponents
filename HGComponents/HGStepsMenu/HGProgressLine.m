@@ -17,7 +17,7 @@
 
 @property (strong, nonatomic) NSTimer *timer;
 
-@property (copy, nonatomic) UIColor *color;
+@property (copy, nonatomic) NSArray *gradientColors;
 @property (copy, nonatomic) HGStepCompletinoBlock completion;
 
 @end
@@ -26,7 +26,7 @@
 
 - (id)initWithFrame:(CGRect)frame
           lineWidth:(CGFloat)lineWidth
-              color:(UIColor *)color
+              colors:(NSArray *)colors
         forDuration:(CGFloat)duration
 withCompletionBlock:(HGStepCompletinoBlock)completion
 {
@@ -37,7 +37,7 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
         _duration = duration;
         _completion = completion;
         _lineWidth = lineWidth;
-        _color = color;
+        _gradientColors = colors;
         
         self.backgroundColor = [UIColor clearColor];
         
@@ -52,13 +52,24 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
     [super drawRect:rect];
     
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetStrokeColorWithColor(context, self.color.CGColor);
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
     
-    UIBezierPath *lineBetweenSteps = [UIBezierPath bezierPath];
-    lineBetweenSteps.lineWidth = 2.0f;
-    [lineBetweenSteps moveToPoint:self.position];
-    [lineBetweenSteps addLineToPoint:CGPointMake(self.count, CGRectGetHeight([self bounds])/2)];
-    [lineBetweenSteps stroke];
+    NSArray *gradientColors = self.gradientColors;
+    CGFloat gradientLocations[] = {0.0f, 1.0f};
+    CGGradientRef gradient = CGGradientCreateWithColors(colorspace, (CFArrayRef)gradientColors, gradientLocations);
+    
+    UIBezierPath *roundedRectanglePath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0.0f,
+                                                                                            (self.frame.size.height/2),
+                                                                                            self.count,
+                                                                                            self.lineWidth)
+                                                                    cornerRadius:0];
+    
+    CGContextSaveGState(context);
+    [roundedRectanglePath fill];
+    [roundedRectanglePath addClip];
+    CGContextDrawLinearGradient(context, gradient, self.position, CGPointMake(self.count, CGRectGetHeight([self bounds])/2), 0);
+    CGColorSpaceRelease(colorspace);
+    CGGradientRelease(gradient);
 }
 
 - (void)startAnimation
@@ -70,7 +81,7 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
 {
     self.count += 1.0f;
     
-    if (self.count < self.frame.size.width)
+    if (self.count < self.frame.size.height)
     {
         [self setNeedsDisplay];
     } else {

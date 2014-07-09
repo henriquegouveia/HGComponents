@@ -11,10 +11,9 @@
 
 @interface HGProgressCircle : UIView
 
-- (id)initWithFrame:(CGRect)frame
-          lineWidth:(CGFloat)lineWidth
+- (id)initWithFrame:(CGRect)frame lineWidth:(CGFloat)lineWidth
           imageName:(NSString *)imageName
-              color:(UIColor *)color
+     colors:(NSArray *)colors
         forDuration:(CGFloat)duration
 withCompletionBlock:(HGStepCompletinoBlock)completion;
 

@@ -41,7 +41,6 @@
     }
 }
 
-
 + (CAGradientLayer *)getMultiColoredLayerWithColors:(NSArray *)colors
                                          startPoint:(CGPoint)startPoint
                                            endPoint:(CGPoint)endPoint
