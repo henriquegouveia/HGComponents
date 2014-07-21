@@ -13,7 +13,7 @@
 
 - (id)initWithFrame:(CGRect)frame lineWidth:(CGFloat)lineWidth
           imageName:(NSString *)imageName
-     colors:(NSArray *)colors
+             colors:(NSArray *)colors
         forDuration:(CGFloat)duration
 withCompletionBlock:(HGStepCompletinoBlock)completion;
 
