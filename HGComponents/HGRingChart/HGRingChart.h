@@ -16,9 +16,10 @@
 
 - (id) initWithFrame:(CGRect)frame
            backColor:(UIColor *)backColor
-       progressColor:(UIColor *)progressColor
+      progressColors:(NSArray *)progressColors
            lineWidth:(NSInteger)lineWidth
           percentage:(CGFloat)percentage
+            velocity:(CGFloat)velocity
    animationDuration:(NSTimeInterval)animationDuration;
 
 - (void) startAnimation;

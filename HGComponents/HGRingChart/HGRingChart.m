@@ -11,13 +11,14 @@
 @interface HGRingChart ()
 
 @property (nonatomic) UIColor *backColor;
-@property (nonatomic) UIColor *progressColor;
-@property (nonatomic, assign) CGFloat percentage;
-@property (nonatomic, assign) NSInteger lineWidth;
-@property (nonatomic, assign) NSTimeInterval duration;
+@property (nonatomic) CGFloat percentage;
+@property (nonatomic) NSInteger lineWidth;
+@property (nonatomic) NSTimeInterval duration;
 
-@property (nonatomic, assign) CGFloat progress;
+@property (nonatomic) CGFloat progress;
+@property (nonatomic) CGFloat velocity;
 
+@property (copy, nonatomic) NSArray *progressColors;
 @property (nonatomic, strong) NSTimer *timer;
 
 @end
@@ -26,18 +27,20 @@
 
 - (id) initWithFrame:(CGRect)frame
            backColor:(UIColor *)backColor
-       progressColor:(UIColor *)progressColor
+      progressColors:(NSArray *)progressColors
            lineWidth:(NSInteger)lineWidth
           percentage:(CGFloat)percentage
+            velocity:(CGFloat)velocity
    animationDuration:(NSTimeInterval)animationDuration
 {
     self = [super initWithFrame:frame];
     if (self) {
         [self setBackgroundColor:[UIColor clearColor]];
         _backColor = backColor;
-        _progressColor = progressColor;
+        _progressColors = progressColors;
         _lineWidth = lineWidth;
-        _duration = 0.001f;
+        _duration = animationDuration;
+        _velocity = velocity;
         _percentage = percentage;
     }
     
@@ -47,6 +50,13 @@
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    
+    NSArray *gradientColors = self.progressColors;
+    CGFloat gradientLocations[] = {0.0f, 1.0f};
+    CGGradientRef gradient = CGGradientCreateWithColors(colorspace, (CFArrayRef)gradientColors, gradientLocations);
     
     CGPoint circlePoint = CGPointMake(CGRectGetWidth([self bounds])/2, CGRectGetHeight([self bounds])/2);
     CGFloat circleRadius = (CGRectGetWidth([self bounds]) - [self lineWidth]) / 2;
@@ -63,36 +73,45 @@
     [backCircle setLineWidth:(CGFloat)[self lineWidth]];
     [backCircle stroke];
     
-    if (self.progress)
-    {
-        CGFloat progressCircleEndAngle = (CGFloat)(- M_PI_2 + [self progress] * 2 * M_PI);
-        
-        UIBezierPath *progressCircle = [UIBezierPath bezierPathWithArcCenter:circlePoint
-                                                                      radius:circleRadius
-                                                                  startAngle:circleStartAngle
-                                                                    endAngle:progressCircleEndAngle
-                                                                   clockwise:YES];
-        
-        [[self progressColor] setStroke];
-        
-        progressCircle.lineWidth = (CGFloat)self.lineWidth;
-        
-        [progressCircle stroke];
-    } else {
-        [[self timer] invalidate];
-    }
+    CGFloat progressCircleEndAngle = (CGFloat)(- M_PI_2 + [self progress] * 2 * M_PI);
+    
+    UIBezierPath *progressCircle = [UIBezierPath bezierPathWithArcCenter:circlePoint
+                                                                  radius:circleRadius
+                                                              startAngle:circleStartAngle
+                                                                endAngle:progressCircleEndAngle
+                                                               clockwise:YES];
+    
+    CGContextSaveGState(context);
+    CGContextSetLineWidth(context, self.lineWidth);
+    CGContextAddPath(context, progressCircle.CGPath);
+    CGContextReplacePathWithStrokedPath(context);
+    CGContextClip(context);
+    
+    //  Draw a linear gradient from top to bottom
+    CGContextDrawLinearGradient(context, gradient, CGPointMake(0.0f, 0.0f), CGPointMake(self.frame.size.width, 0), 0);
+    
+    CGContextRestoreGState(context);
+    
+    [self startAnimation];
 }
 
 - (void) updateProgressCircle
 {
-    if (self.progress > ((self.percentage/1.8) / 100))
-        self.progress = self.progress + (self.duration/(self.progress * 10));
-    else
-        self.progress = self.progress + self.duration;
+    self.progress += self.velocity;
     
-    if (self.progress && [self progress] <= [self percentage]/100) {
+    if (self.progress && (self.progress <= (self.percentage / 100))) {
+        
+        if (self.progress > ((self.percentage * 0.8f) / 100))
+        {
+            self.duration += 0.0002;
+        } else if (self.progress > ((self.percentage * 0.9f) / 100)) {
+            self.duration += 0.0004;
+        }
+        
         [self setNeedsDisplay];
         [self.delegate updatePercentage:self.progress];
+    } else {
+        [[self timer] invalidate];
     }
 }
 
@@ -100,7 +119,7 @@
 
 - (void)startAnimation
 {
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:self.duration target:self selector:@selector(updateProgressCircle) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:self.duration target:self selector:@selector(updateProgressCircle) userInfo:nil repeats:NO];
 }
 
 @end

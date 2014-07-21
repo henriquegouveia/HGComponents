@@ -16,6 +16,7 @@
 @property (nonatomic) NSInteger steps;
 @property (nonatomic) CGFloat lineWidth;
 @property (nonatomic) CGFloat velocity;
+@property (nonatomic) CGFloat progress;
 @property (nonatomic) CGFloat xPosition;
 
 @property (copy, nonatomic) UIColor *firstColor;

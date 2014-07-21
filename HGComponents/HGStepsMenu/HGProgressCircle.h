@@ -15,6 +15,7 @@
           imageName:(NSString *)imageName
      colors:(NSArray *)colors
         forDuration:(CGFloat)duration
+           progress:(CGFloat)progress
 withCompletionBlock:(HGStepCompletinoBlock)completion;
 
 @end

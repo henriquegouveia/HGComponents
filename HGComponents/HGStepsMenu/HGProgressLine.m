@@ -13,6 +13,7 @@
 @property (nonatomic) CGFloat count;
 @property (nonatomic) CGPoint position;
 @property (nonatomic) CGFloat duration;
+@property (nonatomic) CGFloat progress;
 @property (nonatomic) CGFloat lineWidth;
 
 @property (strong, nonatomic) NSTimer *timer;
@@ -26,8 +27,9 @@
 
 - (id)initWithFrame:(CGRect)frame
           lineWidth:(CGFloat)lineWidth
-              colors:(NSArray *)colors
+             colors:(NSArray *)colors
         forDuration:(CGFloat)duration
+           progress:(CGFloat)progress
 withCompletionBlock:(HGStepCompletinoBlock)completion
 {
     self = [super initWithFrame:frame];
@@ -37,6 +39,7 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
         _duration = duration;
         _completion = completion;
         _lineWidth = lineWidth;
+        _progress = progress;
         _gradientColors = colors;
         
         self.backgroundColor = [UIColor clearColor];
@@ -79,7 +82,7 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
 
 - (void)updateView
 {
-    self.count += 1.0f;
+    self.count += self.progress;
     
     if (self.count < self.frame.size.height)
     {
