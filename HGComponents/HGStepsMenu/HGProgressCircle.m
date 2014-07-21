@@ -13,7 +13,6 @@
 @property (nonatomic) CGFloat count;
 @property (nonatomic) CGPoint position;
 @property (nonatomic) CGFloat duration;
-@property (nonatomic) CGFloat progress;
 @property (nonatomic) CGFloat lineWidth;
 
 @property (strong, nonatomic) NSTimer *timer;
@@ -31,7 +30,6 @@
           imageName:(NSString *)imageName
      colors:(NSArray *)colors
         forDuration:(CGFloat)duration
-           progress:(CGFloat)progress
 withCompletionBlock:(HGStepCompletinoBlock)completion
 {
     self = [super initWithFrame:frame];
@@ -41,7 +39,6 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
         _position = CGPointMake(CGRectGetWidth([self bounds])/2, CGRectGetHeight([self bounds])/2);
         _completion = completion;
         _duration = duration;
-        _progress = progress;
         _lineWidth = lineWidth;
         _gradientColors = colors;
         _imageName = imageName;
@@ -92,6 +89,7 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
                                                                    startAngle:-circleStartAngle
                                                                      endAngle:-progressCircleEndAngle
                                                                     clockwise:NO];
+    progressCircleBelow.lineWidth = self.lineWidth;
 
     CGContextSaveGState(context);
     CGContextSetLineWidth(context, self.lineWidth);
@@ -144,7 +142,7 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
 
 - (void)updateView
 {
-    self.count += self.progress;
+    self.count += 6.0f;
     
     if (self.count < 361.0f)
     {

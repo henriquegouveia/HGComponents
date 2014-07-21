@@ -114,6 +114,7 @@
                                                            lineWidth:self.lineWidth
                                                                colors:colors
                                                          forDuration:0.0001
+                                                            progress:80.0f
                                                  withCompletionBlock:^(BOOL status) {
                                                      completion(YES);
                                                  }];

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HGComponents"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "Let your code more clean using this library."
 
   s.description  = <<-DESC
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/henriquegouveia/HGComponents.git", :tag => "0.0.7" }
+  s.source       = { :git => "https://github.com/henriquegouveia/HGComponents.git", :tag => "0.0.8" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
