@@ -33,6 +33,10 @@
 
 - (void)startStepsCreation
 {
+    self.xPosition = 0.0f;
+    [self.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [obj removeFromSuperview];
+    }];
     [self createStepsMenus:0];
 }
 

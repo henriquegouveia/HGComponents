@@ -26,8 +26,9 @@
 
 - (id)initWithFrame:(CGRect)frame
           lineWidth:(CGFloat)lineWidth
-              colors:(NSArray *)colors
+             colors:(NSArray *)colors
         forDuration:(CGFloat)duration
+           progress:(CGFloat)progress
 withCompletionBlock:(HGStepCompletinoBlock)completion
 {
     self = [super initWithFrame:frame];

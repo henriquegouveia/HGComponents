@@ -8,25 +8,26 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol HGRingChart;
+@protocol HGRingChartDelegate;
 
 @interface HGRingChart : UIView
 
-@property (nonatomic, assign) id<HGRingChart> delegate;
+@property (nonatomic) id<HGRingChartDelegate> delegate;
 
-- (id) initWithFrame:(CGRect)frame
-           backColor:(UIColor *)backColor
-      progressColors:(NSArray *)progressColors
-           lineWidth:(NSInteger)lineWidth
-          percentage:(CGFloat)percentage
-            velocity:(CGFloat)velocity
-   animationDuration:(NSTimeInterval)animationDuration;
+- (id)initWithFrame:(CGRect)frame
+          backColor:(UIColor *)backColor
+     progressColors:(NSArray *)progressColors
+          lineWidth:(NSInteger)lineWidth
+         percentage:(CGFloat)percentage
+           velocity:(CGFloat)velocity
+  animationDuration:(NSTimeInterval)animationDuration;
 
-- (void) startAnimation;
+//- (void) startAnimation;
+- (void)updatePercentage:(CGFloat)percentage;
 
 @end
 
-@protocol HGRingChart <NSObject>
+@protocol HGRingChartDelegate <NSObject>
 
 @optional
 
