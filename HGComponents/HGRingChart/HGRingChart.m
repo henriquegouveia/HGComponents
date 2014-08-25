@@ -129,9 +129,12 @@ typedef enum
                                                     animationDuration:self.duration
                                                     currentPercentage:^(CGFloat percentage) {
                                                         [self.delegate updatePercentage:percentage];
-                                                    } completion:^(BOOL finished) {
+                                                    } completion:^(BOOL finished, CGFloat percentage) {
+                                                        [self.delegate updatePercentage:percentage];
                                                         [self.delegate didFinishAnimation];
+
                                                         self.lastPercentage += percentage;
+                                                        
                                                         [self createSlices:slices];
                                                     }];
     

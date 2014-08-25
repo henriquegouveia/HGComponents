@@ -30,7 +30,7 @@
 
 @optional
 
-- (void) updatePercentage:(CGFloat)percentage;
-- (void) didFinishAnimation;
+- (void)updatePercentage:(CGFloat)percentage;
+- (void)didFinishAnimation;
 
 @end

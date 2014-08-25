@@ -135,11 +135,11 @@ typedef enum
     
     if (self.progress && (self.progress <= (self.percentage / 100))) {
         [self setNeedsDisplay];
-        self.updatePercentageBlock(self.progress);
+        self.updatePercentageBlock((self.progress * 100));
     } else {
         [[self timer] invalidate];
         [self setMode:HGRingChartModeZero];
-        self.completionBlock(YES);
+        self.completionBlock(YES, (self.progress * 100));
     }
 }
 
@@ -149,9 +149,9 @@ typedef enum
     
     if (self.progress && (self.progress >= (self.percentage / 100))) {
         [self setNeedsDisplay];
-        self.updatePercentageBlock(self.progress);
+        self.updatePercentageBlock((self.progress * 100));
     } else {
-        self.completionBlock(YES);
+        self.completionBlock(YES, (self.progress * 100));
         [[self timer] invalidate];
         [self setMode:HGRingChartModeZero];
     }
