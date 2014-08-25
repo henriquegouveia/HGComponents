@@ -7,6 +7,7 @@
 //
 
 #import "HGRingChart.h"
+#import "HGRingChartSlice.h"
 
 typedef enum
 {
@@ -27,8 +28,11 @@ typedef enum
 
 @property (nonatomic) HGRingChartMode mode;
 
-@property (copy, nonatomic) NSArray *progressColors;
+@property (copy, nonatomic) NSArray *properties;
 @property (nonatomic, strong) NSTimer *timer;
+@property (copy, nonatomic) NSMutableArray *sliceStacker;
+
+@property (nonatomic) CGFloat lastPercentage;
 
 @end
 
@@ -36,9 +40,8 @@ typedef enum
 
 - (id)initWithFrame:(CGRect)frame
           backColor:(UIColor *)backColor
-     progressColors:(NSArray *)progressColors
           lineWidth:(NSInteger)lineWidth
-         percentage:(CGFloat)percentage
+         properties:(NSArray *)properties
            velocity:(CGFloat)velocity
   animationDuration:(NSTimeInterval)animationDuration
 {
@@ -46,11 +49,10 @@ typedef enum
     if (self) {
         [self setBackgroundColor:[UIColor clearColor]];
         _backColor = backColor;
-        _progressColors = progressColors;
         _lineWidth = lineWidth;
         _duration = animationDuration;
         _velocity = velocity;
-        _percentage = percentage;
+        _properties = properties;
     }
     
     return self;
@@ -60,17 +62,12 @@ typedef enum
 {
     [super drawRect:rect];
     
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
-    
-    NSArray *gradientColors = self.progressColors;
-    CGFloat gradientLocations[] = {0.0f, 1.0f};
-    CGGradientRef gradient = CGGradientCreateWithColors(colorspace, (CFArrayRef)gradientColors, gradientLocations);
+    CGFloat percentage = 360.0f * (self.percentage / 100.0f);
     
     CGPoint circlePoint = CGPointMake(CGRectGetWidth([self bounds])/2, CGRectGetHeight([self bounds])/2);
     CGFloat circleRadius = (CGRectGetWidth([self bounds]) - [self lineWidth]) / 2;
-    CGFloat circleStartAngle = (CGFloat) - M_PI_2;
-    CGFloat backCircleEndAngle = (CGFloat)(1.5 * M_PI);
+    CGFloat circleStartAngle = (-90.0f + percentage) * M_PI / 180.0f;
+    CGFloat backCircleEndAngle = 270.0f * M_PI / 180.0f;
     
     UIBezierPath *backCircle = [UIBezierPath bezierPathWithArcCenter:circlePoint
                                                               radius:circleRadius
@@ -81,107 +78,77 @@ typedef enum
     [[self backColor] setStroke];
     [backCircle setLineWidth:(CGFloat)[self lineWidth]];
     [backCircle stroke];
-    
-    CGFloat progressCircleEndAngle = (CGFloat)(- M_PI_2 + [self progress] * 2 * M_PI);
-    
-    UIBezierPath *progressCircle = [UIBezierPath bezierPathWithArcCenter:circlePoint
-                                                                  radius:circleRadius
-                                                              startAngle:circleStartAngle
-                                                                endAngle:progressCircleEndAngle
-                                                               clockwise:YES];
-    
-    CGContextSaveGState(context);
-    CGContextSetLineWidth(context, self.lineWidth);
-    CGContextAddPath(context, progressCircle.CGPath);
-    CGContextReplacePathWithStrokedPath(context);
-    CGContextClip(context);
-    
-    //  Draw a linear gradient from top to bottom
-    CGContextDrawLinearGradient(context, gradient, CGPointMake(0.0f, 0.0f), CGPointMake(self.frame.size.width, 0), 0);
-    CGContextRestoreGState(context);
-    
-    [self startAnimation];
 }
-
-- (void)updatePercentage:(CGFloat)percentage
-{
-    self.duration = 0.002f;
-    
-    if (percentage < (self.progress * 100))
-    {
-        [self setMode:HGRingChartModeDecrease];
-    } else {
-        [self setMode:HGRingChartModeIncrease];
-    }
-    
-    [self setPercentage:percentage];
-    [self startAnimation];
-}
-
-- (void)updateChart
-{
-    switch (self.mode) {
-        case HGRingChartModeIncrease:
-            [self increaseProgressCircle];
-            break;
-        case HGRingChartModeDecrease:
-            [self decreaseProgressCircle];
-            break;
-        default:
-            [self increaseProgressCircle];
-            break;
-    }
-}
-
-- (void)increaseProgressCircle
-{
-    self.progress += self.velocity;
-    
-    if (self.progress && (self.progress <= (self.percentage / 100))) {
-        
-        if (self.progress > ((self.percentage * 0.8f) / 100))
-        {
-            self.duration += 0.0002;
-        } else if (self.progress > ((self.percentage * 0.9f) / 100)) {
-            self.duration += 0.0004;
-        }
-        
-        [self setNeedsDisplay];
-        [self.delegate updatePercentage:self.progress];
-    } else {
-        [self.delegate updatePercentage:self.progress];
-        [[self timer] invalidate];
-        [self setMode:HGRingChartModeZero];
-    }
-}
-
-- (void)decreaseProgressCircle
-{
-    self.progress -= self.velocity;
-    
-    if (self.progress && (self.progress >= (self.percentage / 100))) {
-        
-        if (self.progress < ((self.percentage * 0.9f) / 100))
-        {
-            self.duration += 0.0002;
-        } else if (self.progress < ((self.percentage * 0.8f) / 100)) {
-            self.duration += 0.0004;
-        }
-        
-        [self setNeedsDisplay];
-        [self.delegate updatePercentage:self.progress];
-    } else {
-        [self.delegate updatePercentage:self.progress];
-        [[self timer] invalidate];
-        [self setMode:HGRingChartModeZero];
-    }
-}
-
-#pragma mark - Actions
 
 - (void)startAnimation
 {
-    [NSTimer scheduledTimerWithTimeInterval:self.duration target:self selector:@selector(updateChart) userInfo:nil repeats:NO];
+    [self createSlices:[[NSMutableArray alloc] initWithArray:self.properties copyItems:YES]];
+}
+
+- (void)updatePercentage:(NSArray *)properties
+{
+    [self updateSlices:[[NSMutableArray alloc] initWithArray:properties copyItems:YES]];
+}
+
+- (void)updateSlices:(NSMutableArray *)slices
+{
+    if (!slices.count)
+    {
+        return;
+    }
+    
+    CGFloat percentage = [[[slices lastObject] objectForKey:@"percentage"] floatValue];
+    
+    HGRingChartSlice * __weak slice = [self.sliceStacker objectAtIndex:(self.sliceStacker.count - slices.count)];
+    [slice updatePercentage:percentage];
+    
+    [slices removeLastObject];
+    [self updateSlices:slices];
+}
+
+- (void)createSlices:(NSMutableArray *)slices
+{
+    if (!slices.count)
+    {
+        return;
+    }
+    
+    NSDictionary *sliceProperties = [slices lastObject];
+    
+    NSArray *progressColors = [sliceProperties objectForKey:@"progressColors"];
+    CGFloat percentage = [[sliceProperties objectForKey:@"percentage"] floatValue];
+    
+    CGFloat startAngle = (-90.0f + (360.0f * (self.lastPercentage / 100))) * M_PI / 180.0f;
+    
+    HGRingChartSlice *slice = [[HGRingChartSlice alloc] initWithFrame:self.bounds
+                                                           startAngle:startAngle
+                                                       progressColors:progressColors
+                                                            lineWidth:self.lineWidth
+                                                           percentage:percentage
+                                                             velocity:self.velocity
+                                                    animationDuration:self.duration
+                                                    currentPercentage:^(CGFloat percentage) {
+                                                        [self.delegate updatePercentage:percentage];
+                                                    } completion:^(BOOL finished) {
+                                                        [self.delegate didFinishAnimation];
+                                                        self.lastPercentage += percentage;
+                                                        [self createSlices:slices];
+                                                    }];
+    
+    [self.sliceStacker addObject:slice];
+    
+    [slices removeLastObject];
+    [self addSubview:slice];
+}
+
+- (NSArray *)sliceStacker
+{
+    if (!_sliceStacker)
+    {
+        _sliceStacker = [NSMutableArray array];
+    }
+    
+    return _sliceStacker;
 }
 
 @end
