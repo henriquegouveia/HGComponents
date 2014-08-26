@@ -30,7 +30,7 @@
 
 @optional
 
-- (void)updatePercentage:(CGFloat)percentage;
+- (void)updatePercentage:(CGFloat)percentage angle:(CGFloat)angle sliceIndex:(NSInteger)index;
 - (void)didFinishAnimation;
 
 @end

@@ -132,26 +132,28 @@ typedef enum
 - (void)increaseProgressCircle
 {
     self.progress += self.velocity;
+    CGFloat endAngle = (self.startAngle + [self progress] * M_PI);
     
     if (self.progress && (self.progress <= (self.percentage / 100))) {
         [self setNeedsDisplay];
-        self.updatePercentageBlock((self.progress * 100));
+        self.updatePercentageBlock((self.progress * 100), endAngle);
     } else {
         [[self timer] invalidate];
         [self setMode:HGRingChartModeZero];
-        self.completionBlock(YES, (self.progress * 100));
+        self.completionBlock(YES, (self.progress * 100), endAngle);
     }
 }
 
 - (void)decreaseProgressCircle
 {
     self.progress -= self.velocity;
+    CGFloat endAngle = (self.startAngle + [self progress] * M_PI);
     
     if (self.progress && (self.progress >= (self.percentage / 100))) {
         [self setNeedsDisplay];
-        self.updatePercentageBlock((self.progress * 100));
+        self.updatePercentageBlock((self.progress * 100), endAngle);
     } else {
-        self.completionBlock(YES, (self.progress * 100));
+        self.completionBlock(YES, (self.progress * 100), endAngle);
         [[self timer] invalidate];
         [self setMode:HGRingChartModeZero];
     }

@@ -7,8 +7,8 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^RingChartUpdateValueCompletionBlock)(CGFloat percentage);
-typedef void (^RingChartSliceCompletionBlock)(BOOL finished, CGFloat percentage);
+typedef void (^RingChartUpdateValueCompletionBlock)(CGFloat percentage, CGFloat angle);
+typedef void (^RingChartSliceCompletionBlock)(BOOL finished, CGFloat percentage, CGFloat angle);
 
 @interface HGRingChartSlice : UIView
 

@@ -120,17 +120,19 @@ typedef enum
     
     CGFloat startAngle = (-90.0f + (360.0f * (self.lastPercentage / 100))) * M_PI / 180.0f;
     
-    HGRingChartSlice *slice = [[HGRingChartSlice alloc] initWithFrame:self.bounds
+    HGRingChartSlice * __block slice = [[HGRingChartSlice alloc] initWithFrame:self.bounds
                                                            startAngle:startAngle
                                                        progressColors:progressColors
                                                             lineWidth:self.lineWidth
                                                            percentage:percentage
                                                              velocity:self.velocity
                                                     animationDuration:self.duration
-                                                    currentPercentage:^(CGFloat percentage) {
-                                                        [self.delegate updatePercentage:percentage];
-                                                    } completion:^(BOOL finished, CGFloat percentage) {
-                                                        [self.delegate updatePercentage:percentage];
+                                                    currentPercentage:^(CGFloat percentage, CGFloat angle) {
+                                                        NSInteger index = [self.sliceStacker indexOfObject:slice];
+                                                        [self.delegate updatePercentage:percentage angle:angle sliceIndex:index];
+                                                    } completion:^(BOOL finished, CGFloat percentage, CGFloat angle) {
+                                                        NSInteger index = [self.sliceStacker indexOfObject:slice];
+                                                        [self.delegate updatePercentage:percentage angle:angle sliceIndex:index];
                                                         [self.delegate didFinishAnimation];
 
                                                         self.lastPercentage += percentage;
