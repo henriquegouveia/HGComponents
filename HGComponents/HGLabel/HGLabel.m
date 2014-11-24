@@ -37,16 +37,9 @@
 
 - (void)_setup
 {
-    self.font = [UIFont fontWithName:self.fontName size:self.fontSize.integerValue];
-}
-
-- (NSString *)fontName
-{
-    if (!_fontName) {
-        return @"Helvetica";
+    if (self.fontName) {
+        self.font = [UIFont fontWithName:self.fontName size:self.fontSize.integerValue];
     }
-    
-    return _fontName;
 }
 
 - (NSNumber *)fontSize {

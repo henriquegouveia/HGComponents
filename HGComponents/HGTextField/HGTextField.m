@@ -41,7 +41,10 @@
 - (void)_setup
 {
     [self _setupCorners];
-    self.font = [UIFont fontWithName:self.fontName size:self.fontSize.integerValue];
+    
+    if (self.fontName) {
+        self.font = [UIFont fontWithName:self.fontName size:self.fontSize.integerValue];
+    }
 }
 
 - (void)_setupCorners
@@ -50,15 +53,6 @@
     {
         [self roundComponentCorners:_radius];
     }
-}
-
-- (NSString *)fontName
-{
-    if (!_fontName) {
-        return @"Helvetica";
-    }
-    
-    return _fontName;
 }
 
 - (NSNumber *)fontSize {
