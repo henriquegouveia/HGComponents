@@ -10,29 +10,29 @@
 	<string>HGComponents</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5730AFF0-F653-43E4-BCDA-C6353ED15C36</key>
-		<string>https://github.com/henriquegouveia/HGComponents.git</string>
+		<key>8C5962C8949F65FFFC48673FB270F7B1EEFD4393</key>
+		<string>https://github.com/henriquegouveia/HGComponents</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HGComponents.xcodeproj/project.xcworkspace</string>
+	<string>HGComponents.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5730AFF0-F653-43E4-BCDA-C6353ED15C36</key>
+		<key>8C5962C8949F65FFFC48673FB270F7B1EEFD4393</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/henriquegouveia/HGComponents.git</string>
+	<string>https://github.com/henriquegouveia/HGComponents</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5730AFF0-F653-43E4-BCDA-C6353ED15C36</string>
+	<string>8C5962C8949F65FFFC48673FB270F7B1EEFD4393</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5730AFF0-F653-43E4-BCDA-C6353ED15C36</string>
+			<string>8C5962C8949F65FFFC48673FB270F7B1EEFD4393</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HGComponents</string>
 		</dict>

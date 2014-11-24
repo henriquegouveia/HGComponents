@@ -8,14 +8,55 @@
 
 #import "HGLabel.h"
 
+@interface HGLabel ()
+
+@property (weak, nonatomic) NSString *fontName;
+@property (weak, nonatomic) NSNumber *fontSize;
+
+@end
+
 @implementation HGLabel
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    [self _setup];
 }
-*/
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+    }
+    return self;
+}
+
+#pragma mark - Setup Component Properties
+
+- (void)_setup
+{
+    self.font = [UIFont fontWithName:self.fontName size:self.fontSize.integerValue];
+}
+
+- (NSString *)fontName
+{
+    if (!_fontName) {
+        return @"Helvetica";
+    }
+    
+    return _fontName;
+}
+
+- (NSNumber *)fontSize {
+    
+    if (!_fontSize) {
+        return @17.0f;
+    }
+    
+    return _fontSize;
+}
+
 
 @end

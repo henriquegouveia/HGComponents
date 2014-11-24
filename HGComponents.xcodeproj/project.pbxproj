@@ -6,30 +6,10 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		4D712CA318BEB6BF0034545D /* UniversalLib */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 4D712CA418BEB6BF0034545D /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
-			buildPhases = (
-				4D712CA718BEB6ED0034545D /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = UniversalLib;
-			productName = UniversalLib;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		4D04190818C01440009D17E4 /* UIView+HGAdditionals.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D04190718C01440009D17E4 /* UIView+HGAdditionals.m */; };
 		4D712C3618BEB22A0034545D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D712C3518BEB22A0034545D /* Foundation.framework */; };
 		4D712C3B18BEB22A0034545D /* HGComponents.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D712C3A18BEB22A0034545D /* HGComponents.h */; };
-		4D712C4418BEB22A0034545D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D712C4318BEB22A0034545D /* XCTest.framework */; };
-		4D712C4518BEB22A0034545D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D712C3518BEB22A0034545D /* Foundation.framework */; };
-		4D712C4718BEB22A0034545D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D712C4618BEB22A0034545D /* UIKit.framework */; };
-		4D712C4A18BEB22A0034545D /* libHGComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D712C3218BEB22A0034545D /* libHGComponents.a */; };
-		4D712C5018BEB22A0034545D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D712C4E18BEB22A0034545D /* InfoPlist.strings */; };
-		4D712C5218BEB22A0034545D /* HGComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C5118BEB22A0034545D /* HGComponentsTests.m */; };
 		4D712C8918BEB2AF0034545D /* HGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C5D18BEB2AF0034545D /* HGAlertView.m */; };
 		4D712C8A18BEB2AF0034545D /* HGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C6018BEB2AF0034545D /* HGButton.m */; };
 		4D712C8B18BEB2AF0034545D /* HGMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D712C6218BEB2AF0034545D /* HGMenuButton.m */; };
@@ -74,17 +54,8 @@
 		4DF2982E1965A62D0056B284 /* HGProgressCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF298281965A62D0056B284 /* HGProgressCircle.m */; };
 		4DF2982F1965A62D0056B284 /* HGProgressLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2982A1965A62D0056B284 /* HGProgressLine.m */; };
 		4DF298301965A62D0056B284 /* HGStepsMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2982D1965A62D0056B284 /* HGStepsMenu.m */; };
+		AEBD0B1F1A23948000A71E24 /* HGLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBD0B1E1A23948000A71E24 /* HGLabel.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4D712C4818BEB22A0034545D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D712C2A18BEB22A0034545D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D712C3118BEB22A0034545D;
-			remoteInfo = HGComponents;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4D712C3018BEB22A0034545D /* CopyFiles */ = {
@@ -123,7 +94,6 @@
 		4D712C3518BEB22A0034545D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4D712C3918BEB22A0034545D /* HGComponents-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HGComponents-Prefix.pch"; sourceTree = "<group>"; };
 		4D712C3A18BEB22A0034545D /* HGComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGComponents.h; sourceTree = "<group>"; };
-		4D712C4218BEB22A0034545D /* HGComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D712C4318BEB22A0034545D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4D712C4618BEB22A0034545D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4D712C4D18BEB22A0034545D /* HGComponentsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HGComponentsTests-Info.plist"; sourceTree = "<group>"; };
@@ -182,6 +152,8 @@
 		4DF2982B1965A62D0056B284 /* HGStepCompletinoBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGStepCompletinoBlock.h; sourceTree = "<group>"; };
 		4DF2982C1965A62D0056B284 /* HGStepsMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGStepsMenu.h; sourceTree = "<group>"; };
 		4DF2982D1965A62D0056B284 /* HGStepsMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGStepsMenu.m; sourceTree = "<group>"; };
+		AEBD0B1D1A23948000A71E24 /* HGLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HGLabel.h; path = HGLabel/HGLabel.h; sourceTree = "<group>"; };
+		AEBD0B1E1A23948000A71E24 /* HGLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HGLabel.m; path = HGLabel/HGLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,17 +164,6 @@
 				4DEE7F9318C00C3200973E79 /* QuartzCore.framework in Frameworks */,
 				4DEE7F9118C00C2E00973E79 /* UIKit.framework in Frameworks */,
 				4D712C3618BEB22A0034545D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D712C3F18BEB22A0034545D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D712C4A18BEB22A0034545D /* libHGComponents.a in Frameworks */,
-				4D712C4418BEB22A0034545D /* XCTest.framework in Frameworks */,
-				4D712C4718BEB22A0034545D /* UIKit.framework in Frameworks */,
-				4D712C4518BEB22A0034545D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				4D712C3218BEB22A0034545D /* libHGComponents.a */,
-				4D712C4218BEB22A0034545D /* HGComponentsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,6 +212,7 @@
 		4D712C3718BEB22A0034545D /* HGComponents */ = {
 			isa = PBXGroup;
 			children = (
+				AEBD0B1C1A23945800A71E24 /* HGLabel */,
 				4DF298261965A62D0056B284 /* HGStepsMenu */,
 				4D712C9E18BEB4A00034545D /* HGUtils */,
 				4D74D5D0193D16080055B200 /* HGImageView */,
@@ -488,6 +449,15 @@
 			path = HGStepsMenu;
 			sourceTree = "<group>";
 		};
+		AEBD0B1C1A23945800A71E24 /* HGLabel */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD0B1D1A23948000A71E24 /* HGLabel.h */,
+				AEBD0B1E1A23948000A71E24 /* HGLabel.m */,
+			);
+			name = HGLabel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -507,24 +477,6 @@
 			productName = HGComponents;
 			productReference = 4D712C3218BEB22A0034545D /* libHGComponents.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		4D712C4118BEB22A0034545D /* HGComponentsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D712C5818BEB22A0034545D /* Build configuration list for PBXNativeTarget "HGComponentsTests" */;
-			buildPhases = (
-				4D712C3E18BEB22A0034545D /* Sources */,
-				4D712C3F18BEB22A0034545D /* Frameworks */,
-				4D712C4018BEB22A0034545D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D712C4918BEB22A0034545D /* PBXTargetDependency */,
-			);
-			name = HGComponentsTests;
-			productName = HGComponentsTests;
-			productReference = 4D712C4218BEB22A0034545D /* HGComponentsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -548,39 +500,9 @@
 			projectRoot = "";
 			targets = (
 				4D712C3118BEB22A0034545D /* HGComponents */,
-				4D712C4118BEB22A0034545D /* HGComponentsTests */,
-				4D712CA318BEB6BF0034545D /* UniversalLib */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		4D712C4018BEB22A0034545D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D712C5018BEB22A0034545D /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4D712CA718BEB6ED0034545D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\nUNIVERSAL_OUTPUTFOLDER_LOCAL=${SRCROOT}/build\n\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER_LOCAL}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target HGComponents ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target HGComponents -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}\" \"${UNIVERSAL_OUTPUTFOLDER_LOCAL}/\"\n\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER_LOCAL}/libHGComponents.build\"";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D712C2E18BEB22A0034545D /* Sources */ = {
@@ -602,6 +524,7 @@
 				4D712CA218BEB4A00034545D /* UIColor+HGAdditionals.m in Sources */,
 				4D712C8E18BEB2AF0034545D /* HGMenu.m in Sources */,
 				4D712C9018BEB2AF0034545D /* HGRingChart.m in Sources */,
+				AEBD0B1F1A23948000A71E24 /* HGLabel.m in Sources */,
 				4D712C9418BEB2AF0034545D /* HGTableViewController.m in Sources */,
 				4D74D5E0193D18170055B200 /* EHDragOutViewBottomToTopStrategy.m in Sources */,
 				4D712C9118BEB2AF0034545D /* HGSearchBar.m in Sources */,
@@ -616,23 +539,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D712C3E18BEB22A0034545D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D712C5218BEB22A0034545D /* HGComponentsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4D712C4918BEB22A0034545D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D712C3118BEB22A0034545D /* HGComponents */;
-			targetProxy = 4D712C4818BEB22A0034545D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4D712C4E18BEB22A0034545D /* InfoPlist.strings */ = {
@@ -730,7 +637,7 @@
 				DSTROOT = /tmp/HGComponents.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HGComponents/HGComponents-Prefix.pch";
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -746,72 +653,13 @@
 				DSTROOT = /tmp/HGComponents.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HGComponents/HGComponents-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		4D712C5918BEB22A0034545D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HGComponents/HGComponents-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "HGComponentsTests/HGComponentsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		4D712C5A18BEB22A0034545D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HGComponents/HGComponents-Prefix.pch";
-				INFOPLIST_FILE = "HGComponentsTests/HGComponentsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-		4D712CA518BEB6BF0034545D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		4D712CA618BEB6BF0034545D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -832,24 +680,6 @@
 			buildConfigurations = (
 				4D712C5618BEB22A0034545D /* Debug */,
 				4D712C5718BEB22A0034545D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D712C5818BEB22A0034545D /* Build configuration list for PBXNativeTarget "HGComponentsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D712C5918BEB22A0034545D /* Debug */,
-				4D712C5A18BEB22A0034545D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D712CA418BEB6BF0034545D /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D712CA518BEB6BF0034545D /* Debug */,
-				4D712CA618BEB6BF0034545D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

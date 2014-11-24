@@ -13,6 +13,8 @@
 @interface HGTextField ()
 
 @property (assign, nonatomic) CGFloat radius;
+@property (weak, nonatomic) NSString *fontName;
+@property (weak, nonatomic) NSNumber *fontSize;
 
 @end
 
@@ -39,6 +41,7 @@
 - (void)_setup
 {
     [self _setupCorners];
+    self.font = [UIFont fontWithName:self.fontName size:self.fontSize.integerValue];
 }
 
 - (void)_setupCorners
@@ -47,6 +50,24 @@
     {
         [self roundComponentCorners:_radius];
     }
+}
+
+- (NSString *)fontName
+{
+    if (!_fontName) {
+        return @"Helvetica";
+    }
+    
+    return _fontName;
+}
+
+- (NSNumber *)fontSize {
+    
+    if (!_fontSize) {
+        return @17.0f;
+    }
+    
+    return _fontSize;
 }
 
 @end
