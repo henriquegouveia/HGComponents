@@ -28,6 +28,9 @@ static NSString * const kHGDragOutViewStrategy = @"strategy";
 
 @implementation HGDragView
 
+@synthesize visibleAmount = _visibleAmount;
+@synthesize maxExtendedAmount = _maxExtendedAmount;
+
 - (void)awakeFromNib
 {
     NSString *classStrategy = [NSString stringWithFormat:@"EHDragOutView%@Strategy", _strategy];
@@ -100,6 +103,29 @@ static NSString * const kHGDragOutViewStrategy = @"strategy";
 - (void) dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (CGFloat)visibleAmount {
+    if (!_visibleAmount) {
+        
+        return [self isHorizontalStrategy] ? self.frame.size.width : self.frame.size.height;
+    }
+    
+    return _visibleAmount;
+}
+
+- (CGFloat)maxExtendedAmount {
+    if (!_maxExtendedAmount) {
+        
+        return [self isHorizontalStrategy] ? self.frame.size.width : self.frame.size.height;
+    }
+    
+    return _maxExtendedAmount;
+}
+
+- (BOOL)isHorizontalStrategy {
+    BOOL isHorizontalStrategy = [self.dragOutViewStrategy isKindOfClass:EHDragOutViewLeftToRightStrategy.class] || [self.dragOutViewStrategy isKindOfClass:EHDragOutViewRightToLeftStrategy.class];
+    return isHorizontalStrategy;
 }
 
 @end
