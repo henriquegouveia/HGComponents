@@ -101,6 +101,8 @@ withCompletionBlock:(HGStepCompletinoBlock)completion
     CGContextDrawLinearGradient(context, gradient, CGPointMake(0.0f, 0.0f), CGPointMake(self.frame.size.width, 0), 0);
     
     CGContextRestoreGState(context);
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorspace);
 
 }
 

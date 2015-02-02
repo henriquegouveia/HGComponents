@@ -13,12 +13,7 @@ typedef void (^HGTableViewControllerDidSelectedItemBlock)(id object);
 @interface HGTableViewController : UITableViewController <UITextFieldDelegate>
 
 - (id)initWithDataSource:(NSArray *)dataSource
-            paramsToShow:(NSArray *)paramsText
-          paramsToFilter:(NSArray *)paramsFilter
-               textField:(UITextField *)textField
-                   frame:(CGRect)rect
-                textFont:(UIFont *)font
-               textColor:(UIColor *)color
+                 contact:(id)contact
               completion:(HGTableViewControllerDidSelectedItemBlock)block;
 
 @end

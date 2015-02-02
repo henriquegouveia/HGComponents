@@ -21,6 +21,7 @@
 
 @property (copy, nonatomic) UIColor *firstColor;
 @property (copy, nonatomic) UIColor *secondColor;
+@property (copy, nonatomic) UIColor *thirdColor;
 
 @property (copy, nonatomic) NSArray *completedStepsIcons;
 @property (copy, nonatomic) NSArray *uncompletedStepsIcons;
@@ -130,9 +131,10 @@
 {
     NSArray *colors = nil;
     
-    if (step == self.stepCompleted || step > self.stepCompleted)
-    {
+    if (step == self.stepCompleted) {
         colors = @[(id)self.secondColor.CGColor, (id)self.secondColor.CGColor];
+    } else if (step > self.stepCompleted) {
+        colors = @[(id)self.thirdColor.CGColor, (id)self.thirdColor.CGColor];
     } else {
         colors = @[(id)self.firstColor.CGColor, (id)self.firstColor.CGColor];
     }

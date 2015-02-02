@@ -17,6 +17,9 @@
 @property (nonatomic) CGFloat borderWidth;
 @property (weak, nonatomic) UIColor *borderColor;
 
+@property (weak, nonatomic) NSString *fontName;
+@property (weak, nonatomic) NSNumber *fontSize;
+
 @end
 
 @implementation HGButton
@@ -31,6 +34,11 @@
 - (void)_setup
 {
     [self roundComponentCorners:_radius];
+    
+    if (self.fontName && self.fontSize) {
+        [self.titleLabel setFont:[UIFont fontWithName:self.fontName size:self.fontSize.floatValue]];
+    }
+    
     [self _setupBorder];
 }
 

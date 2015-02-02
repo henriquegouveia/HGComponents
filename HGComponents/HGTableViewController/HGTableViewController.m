@@ -6,19 +6,17 @@
 //  Copyright (c) 2014 Henrique Gouveia. All rights reserved.
 //
 
+
+
 #import "HGTableViewController.h"
 
 @interface HGTableViewController ()
 
 @property (strong, nonatomic) NSArray *paramsToFilter;
-@property (strong, nonatomic) NSArray *paramsToShowText;
 
-@property (copy, nonatomic) UITextField *textField;
 @property (copy, nonatomic) NSArray *dataSource;
 @property (copy, nonatomic) NSArray *searchResult;
-
-@property (copy, nonatomic) UIFont *textFont;
-@property (copy, nonatomic) UIColor *textColor;
+@property (strong, nonatomic)id contact;
 
 @property (copy, nonatomic) HGTableViewControllerDidSelectedItemBlock didSelectedObject;
 
@@ -27,52 +25,43 @@
 @implementation HGTableViewController
 
 - (id)initWithDataSource:(NSArray *)dataSource
-            paramsToShow:(NSArray *)paramsText
-          paramsToFilter:(NSArray *)paramsFilter
-        textField:(UITextField *)textField
-                   frame:(CGRect)rect
-                textFont:(UIFont *)font
-               textColor:(UIColor *)color
-              completion:(HGTableViewControllerDidSelectedItemBlock)block
-{
+                 contact:(id)contact
+              completion:(HGTableViewControllerDidSelectedItemBlock)block {
     self = [super init];
-    if (self)
-    {
-        [self.view setFrame:rect];
-        
+    
+    if (self) {
         _dataSource = dataSource;
         _searchResult = dataSource;
-        
-        _textFont = font;
-        _textColor = color;
-        
-        _paramsToFilter = paramsFilter;
-        _paramsToShowText = paramsText;
-
-        _textField = textField;
-        _textField.delegate = self;
-        
         _didSelectedObject = block;
+        _contact = contact;
         
-        [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
         self.tableView.dataSource = self;
     }
     
     return self;
 }
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
+-(void)viewWillAppear:(BOOL)animated {
+    NSIndexPath *indexPath;
+    
+    if (self.contact) {
+        indexPath= [NSIndexPath indexPathForRow:[self.dataSource indexOfObject:self.contact] inSection:0];
+    } else {
+        indexPath= [NSIndexPath indexPathForRow:0 inSection:0];
     }
-    return self;
+
+    [self.tableView selectRowAtIndexPath:indexPath animated:YES  scrollPosition:UITableViewScrollPositionBottom];
+    self.didSelectedObject([self.searchResult objectAtIndex:indexPath.row]);
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"HSNContactsCell" bundle:nil]
+         forCellReuseIdentifier:@"Cell"];
+    
+    [self.tableView setBackgroundColor:[UIColor clearColor]];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -81,78 +70,43 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[self searchResult] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    id object = [[self searchResult] objectAtIndex:indexPath.row];
-    
-    NSString *textToShow = [NSString new];
-    for (NSString *text in self.paramsToShowText)
-    {
-        textToShow = [textToShow stringByAppendingFormat:@"%@ ", [object valueForKeyPath:text]];
-    }
-    
-    if (self.textFont)
-    {
-        [cell.textLabel setFont:self.textFont];
-    }
-    
-    if (self.textColor)
-    {
-        [cell.textLabel setTextColor:self.textColor];
-    }
-    
-    cell.textLabel.text = textToShow;
-    
-    return cell;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.didSelectedObject([self.searchResult objectAtIndex:indexPath.row]);
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    self.didSelectedObject([self.searchResult objectAtIndex:indexPath.row]);
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 84.0f;
 }
 
 #pragma mark - UITextField Delegate
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-{
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     self.searchResult = [self filterDatasourceParameters:[NSString stringWithFormat:@"%@%@", textField.text, string]];
     [self.tableView reloadData];
-    
+
     return YES;
 }
 
 #pragma mark - Filter DataSource Array
 
-- (NSArray *)filterDatasourceParameters:(NSString *)value
-{
+- (NSArray *)filterDatasourceParameters:(NSString *)value {
     NSMutableArray *predicates = [NSMutableArray new];
-    
     for (NSString *param in self.paramsToFilter)
+        
     {
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K CONTAINS[cd] %@", param, value];
         [predicates addObject:predicate];
