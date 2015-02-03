@@ -25,6 +25,7 @@
 
 @property (copy, nonatomic) NSArray *completedStepsIcons;
 @property (copy, nonatomic) NSArray *uncompletedStepsIcons;
+@property (copy, nonatomic) NSArray *pendingStepsIcons;
 
 @property (nonatomic) NSInteger stepCompleted;
 
@@ -64,6 +65,10 @@
 - (void)setupUncompletedIcons:(NSArray *)stepsIcons
 {
     self.uncompletedStepsIcons = stepsIcons;
+}
+
+- (void)setupPendingIcons:(NSArray *)stepsIcons {
+    self.pendingStepsIcons = stepsIcons;
 }
 
 - (void)createStepsMenus:(NSInteger)step
@@ -147,23 +152,25 @@
     NSArray *colors = nil;
     NSInteger nextStep = (step + 1);
     
-    if (nextStep == self.stepCompleted)
-    {
+    if (nextStep == self.stepCompleted) {
         colors = @[(id)self.firstColor.CGColor, (id)self.secondColor.CGColor];
     } else if (step < self.stepCompleted) {
         colors = @[(id)self.firstColor.CGColor, (id)self.firstColor.CGColor];
+    } else if (step > self.stepCompleted) {
+        colors = @[(id)self.thirdColor.CGColor, (id)self.thirdColor.CGColor];
     } else {
-        colors = @[(id)self.secondColor.CGColor, (id)self.secondColor.CGColor];
+        colors = @[(id)self.secondColor.CGColor, (id)self.thirdColor.CGColor];
     }
-    
+
     return colors;
 }
 
 - (NSString *)setupImageForStep:(NSInteger)step
 {
-    if (step == self.stepCompleted || step > self.stepCompleted)
-    {
+    if (step == self.stepCompleted) {
         return [self.uncompletedStepsIcons objectAtIndex:step];
+    } else if (step > self.stepCompleted) {
+        return [self.pendingStepsIcons objectAtIndex:step];
     } else {
         return [self.completedStepsIcons objectAtIndex:step];
     }
