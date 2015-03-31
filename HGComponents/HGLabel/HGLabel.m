@@ -24,6 +24,10 @@
     [self _setup];
 }
 
++ (Class)layerClass {
+    return [CATiledLayer class];
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -37,6 +41,10 @@
 
 - (void)_setup
 {
+    CATiledLayer *tiledLayer = (CATiledLayer*)self.layer;
+    tiledLayer.levelsOfDetail = 10;
+    tiledLayer.levelsOfDetailBias = 10;
+    
     if (self.fontName) {
         self.font = [UIFont fontWithName:self.fontName size:self.fontSize.integerValue];
     }
