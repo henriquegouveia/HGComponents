@@ -8,10 +8,14 @@
 
 #import "HGLabel.h"
 
+IB_DESIGNABLE
+
 @interface HGLabel ()
 
 @property (weak, nonatomic) NSString *fontName;
 @property (weak, nonatomic) NSNumber *fontSize;
+
+@property (nonatomic) IBInspectable BOOL highQuality;
 
 @end
 
@@ -28,8 +32,7 @@
     return [CATiledLayer class];
 }
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
@@ -39,19 +42,23 @@
 
 #pragma mark - Setup Component Properties
 
-- (void)_setup
-{
-    CATiledLayer *tiledLayer = (CATiledLayer*)self.layer;
-    tiledLayer.levelsOfDetail = 10;
-    tiledLayer.levelsOfDetailBias = 10;
-    
+- (void)_setup {
     if (self.fontName) {
         self.font = [UIFont fontWithName:self.fontName size:self.fontSize.integerValue];
+    }
+    
+    [self setupQuality];
+}
+
+- (void)setupQuality {
+    if (self.highQuality) {
+        CATiledLayer *tiledLayer = (CATiledLayer*)self.layer;
+        tiledLayer.levelsOfDetail = 10;
+        tiledLayer.levelsOfDetailBias = 10;
     }
 }
 
 - (NSNumber *)fontSize {
-    
     if (!_fontSize) {
         return @17.0f;
     }

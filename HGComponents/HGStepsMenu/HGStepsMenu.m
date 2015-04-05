@@ -47,8 +47,8 @@
     [super awakeFromNib];
     
     NSAssert(((self.steps * self.frame.size.height) < self.frame.size.width), @"Some steps won't appear because your width is not enough");
-//    NSAssert((self.steps != self.completedStepsIcons.count) || (self.steps != self.uncompletedStepsIcons.count), @"The quantity of icons is different of steps");
-//    
+    NSAssert((self.steps != self.completedStepsIcons.count) || (self.steps != self.uncompletedStepsIcons.count), @"The quantity of icons is different of the steps");
+    
     self.steps -= 1;
 }
 
