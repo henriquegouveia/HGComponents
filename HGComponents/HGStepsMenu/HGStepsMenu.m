@@ -35,8 +35,6 @@
 
 - (void)startStepsCreation
 {
-    NSAssert((self.steps != self.completedStepsIcons.count) || (self.steps != self.uncompletedStepsIcons.count), @"The quantity of icons is different of the steps");
-    
     self.xPosition = 0.0f;
     [self.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         [obj removeFromSuperview];

@@ -8,14 +8,12 @@
 
 #import "HGLabel.h"
 
-IB_DESIGNABLE
-
 @interface HGLabel ()
 
 @property (weak, nonatomic) NSString *fontName;
 @property (weak, nonatomic) NSNumber *fontSize;
 
-@property (nonatomic) IBInspectable BOOL highQuality;
+@property (nonatomic) BOOL highQuality;
 
 @end
 
