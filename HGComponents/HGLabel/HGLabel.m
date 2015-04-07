@@ -13,8 +13,6 @@
 @property (weak, nonatomic) NSString *fontName;
 @property (weak, nonatomic) NSNumber *fontSize;
 
-@property (nonatomic) BOOL highQuality;
-
 @end
 
 @implementation HGLabel
@@ -24,10 +22,6 @@
     [super awakeFromNib];
     
     [self _setup];
-}
-
-+ (Class)layerClass {
-    return [CATiledLayer class];
 }
 
 - (id)initWithFrame:(CGRect)frame {
@@ -43,16 +37,6 @@
 - (void)_setup {
     if (self.fontName) {
         self.font = [UIFont fontWithName:self.fontName size:self.fontSize.integerValue];
-    }
-    
-    [self setupQuality];
-}
-
-- (void)setupQuality {
-    if (self.highQuality) {
-        CATiledLayer *tiledLayer = (CATiledLayer*)self.layer;
-        tiledLayer.levelsOfDetail = 10;
-        tiledLayer.levelsOfDetailBias = 10;
     }
 }
 
