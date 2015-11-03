@@ -22,16 +22,28 @@
 @property (copy, nonatomic) UIColor *firstColor;
 @property (copy, nonatomic) UIColor *secondColor;
 @property (copy, nonatomic) UIColor *thirdColor;
+@property (copy, nonatomic) UIColor *forthColor;
 
 @property (copy, nonatomic) NSArray *completedStepsIcons;
 @property (copy, nonatomic) NSArray *uncompletedStepsIcons;
 @property (copy, nonatomic) NSArray *pendingStepsIcons;
+
+@property (copy, nonatomic) NSArray *skippedSteps;
 
 @property (nonatomic) NSInteger stepCompleted;
 
 @end
 
 @implementation HGStepsMenu
+
+- (void)setSkippedSteps:(NSArray *)skippedSteps
+{
+    [skippedSteps enumerateObjectsUsingBlock:^(NSNumber *skippedStep, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSAssert(([skippedStep integerValue] <= self.steps), @"Skipped step is greater then available steps.");
+    }];
+    
+    _skippedSteps = skippedSteps;
+}
 
 - (void)startStepsCreation
 {
@@ -47,14 +59,20 @@
     [super awakeFromNib];
     
     NSAssert(((self.steps * self.frame.size.height) < self.frame.size.width), @"Some steps won't appear because your width is not enough");
-    NSAssert((self.steps != self.completedStepsIcons.count) || (self.steps != self.uncompletedStepsIcons.count), @"The quantity of icons is different of steps");
     
     self.steps -= 1;
 }
 
-- (void)doneStep:(NSInteger)step
+- (void)doneStep:(NSInteger)step withSkippedSteps:(NSArray *)skippedSteps
 {
     self.stepCompleted = step;
+    
+    if (skippedSteps) self.skippedSteps = skippedSteps;
+}
+
+- (void)doneStep:(NSInteger)step
+{
+    [self doneStep:step withSkippedSteps:nil];
 }
 
 - (void)setupCompletedIcons:(NSArray *)stepsIcons
@@ -76,6 +94,7 @@
     NSInteger __block currentStep = step;
     
     if (step < self.steps) {
+        
         [self createCircleStep:step withCompletionBlock:^(BOOL status) {
             if (status) {
                 [self createLineStep:step withCompletionBlock:^(BOOL status) {
@@ -95,8 +114,12 @@
 - (void)createCircleStep:(NSInteger)step withCompletionBlock:(void(^)(BOOL status))completion
 {
     NSString __weak *imageName = [self setupImageForStep:step];
-    
+
     NSArray *colors = [self setupCircleColorsForNextStep:step];
+    
+    if ([self.skippedSteps containsObject:@(step)]) {
+        colors = @[(id)self.forthColor.CGColor, (id)self.forthColor.CGColor];
+    }
     
     HGProgressCircle *circleStep = [[HGProgressCircle alloc] initWithFrame:CGRectMake(self.xPosition,
                                                                                       0.0f,
@@ -116,6 +139,10 @@
 - (void)createLineStep:(NSInteger)step withCompletionBlock:(void(^)(BOOL status))completion
 {
     NSArray *colors = [self setupLineColorsForNextStep:step];
+    
+    if ([self.skippedSteps containsObject:@(step)]) {
+        colors = @[(id)self.forthColor.CGColor, colors[1]];
+    }
     
     HGProgressLine *lineStep = [[HGProgressLine alloc] initWithFrame:CGRectMake(self.xPosition,
                                                                                 0.0f,
