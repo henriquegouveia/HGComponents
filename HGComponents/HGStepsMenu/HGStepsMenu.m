@@ -19,16 +19,19 @@
 @property (nonatomic) CGFloat progress;
 @property (nonatomic) CGFloat xPosition;
 
-@property (copy, nonatomic) UIColor *firstColor;
-@property (copy, nonatomic) UIColor *secondColor;
-@property (copy, nonatomic) UIColor *thirdColor;
-@property (copy, nonatomic) UIColor *forthColor;
+@property (copy, nonatomic) UIColor *completedColor;
+@property (copy, nonatomic) UIColor *currentColor;
+@property (copy, nonatomic) UIColor *uncompletedColor;
+@property (copy, nonatomic) UIColor *skippedColor;
+@property (copy, nonatomic) UIColor *pendingColor;
 
 @property (copy, nonatomic) NSArray *completedStepsIcons;
 @property (copy, nonatomic) NSArray *uncompletedStepsIcons;
+@property (copy, nonatomic) NSArray *currentStepsIcons;
 @property (copy, nonatomic) NSArray *pendingStepsIcons;
 
 @property (copy, nonatomic) NSArray *skippedSteps;
+@property (copy, nonatomic) NSArray *pendingSteps;
 
 @property (nonatomic) NSInteger stepCompleted;
 
@@ -63,16 +66,22 @@
     self.steps -= 1;
 }
 
-- (void)doneStep:(NSInteger)step withSkippedSteps:(NSArray *)skippedSteps
+- (void)doneStep:(NSInteger)step withSkippedSteps:(NSArray *)skippedSteps andPendingSteps:(NSArray *)pendingSteps
 {
     self.stepCompleted = step;
     
     if (skippedSteps) self.skippedSteps = skippedSteps;
+    if (pendingSteps) self.pendingSteps = pendingSteps;
+}
+
+- (void)doneStep:(NSInteger)step withSkippedSteps:(NSArray *)skippedSteps
+{
+    [self doneStep:step withSkippedSteps:skippedSteps andPendingSteps:nil];
 }
 
 - (void)doneStep:(NSInteger)step
 {
-    [self doneStep:step withSkippedSteps:nil];
+    [self doneStep:step withSkippedSteps:nil andPendingSteps:nil];
 }
 
 - (void)setupCompletedIcons:(NSArray *)stepsIcons
@@ -85,7 +94,12 @@
     self.uncompletedStepsIcons = stepsIcons;
 }
 
-- (void)setupPendingIcons:(NSArray *)stepsIcons {
+- (void)setupCurrentIcons:(NSArray *)stepsIcons {
+    self.currentStepsIcons = stepsIcons;
+}
+
+- (void)setupPendingIcons:(NSArray *)stepsIcons
+{
     self.pendingStepsIcons = stepsIcons;
 }
 
@@ -118,7 +132,11 @@
     NSArray *colors = [self setupCircleColorsForNextStep:step];
     
     if ([self.skippedSteps containsObject:@(step)]) {
-        colors = @[(id)self.forthColor.CGColor, (id)self.forthColor.CGColor];
+        colors = @[(id)self.skippedColor.CGColor, (id)self.skippedColor.CGColor];
+    }
+    
+    if ([self.pendingSteps containsObject:@(step)]) {
+        colors = @[(id)self.pendingColor.CGColor, (id)self.pendingColor.CGColor];
     }
     
     HGProgressCircle *circleStep = [[HGProgressCircle alloc] initWithFrame:CGRectMake(self.xPosition,
@@ -141,7 +159,11 @@
     NSArray *colors = [self setupLineColorsForNextStep:step];
     
     if ([self.skippedSteps containsObject:@(step)]) {
-        colors = @[(id)self.forthColor.CGColor, colors[1]];
+        colors = @[(id)self.skippedColor.CGColor, colors[1]];
+    }
+    
+    if ([self.pendingSteps containsObject:@(step)]) {
+        colors = @[(id)self.pendingColor.CGColor, colors[1]];
     }
     
     HGProgressLine *lineStep = [[HGProgressLine alloc] initWithFrame:CGRectMake(self.xPosition,
@@ -164,11 +186,19 @@
     NSArray *colors = nil;
     
     if (step == self.stepCompleted) {
-        colors = @[(id)self.secondColor.CGColor, (id)self.secondColor.CGColor];
+        colors = @[(id)self.currentColor.CGColor, (id)self.currentColor.CGColor];
     } else if (step > self.stepCompleted) {
-        colors = @[(id)self.thirdColor.CGColor, (id)self.thirdColor.CGColor];
+        colors = @[(id)self.uncompletedColor.CGColor, (id)self.uncompletedColor.CGColor];
     } else {
-        colors = @[(id)self.firstColor.CGColor, (id)self.firstColor.CGColor];
+        colors = @[(id)self.completedColor.CGColor, (id)self.completedColor.CGColor];
+    }
+    
+    if ([self.skippedSteps containsObject:@(step)] ) {
+        colors = @[(id)self.skippedColor.CGColor, colors[1]];
+    }
+    
+    if ([self.pendingSteps containsObject:@(step)] ) {
+        colors = @[(id)self.pendingColor.CGColor, colors[1]];
     }
 
     return colors;
@@ -180,13 +210,17 @@
     NSInteger nextStep = (step + 1);
     
     if (nextStep == self.stepCompleted) {
-        colors = @[(id)self.firstColor.CGColor, (id)self.secondColor.CGColor];
+        colors = @[(id)self.completedColor.CGColor, (id)self.currentColor.CGColor];
     } else if (step < self.stepCompleted) {
-        colors = @[(id)self.firstColor.CGColor, (id)self.firstColor.CGColor];
+        colors = @[(id)self.completedColor.CGColor, (id)self.completedColor.CGColor];
     } else if (step > self.stepCompleted) {
-        colors = @[(id)self.thirdColor.CGColor, (id)self.thirdColor.CGColor];
+        colors = @[(id)self.uncompletedColor.CGColor, (id)self.uncompletedColor.CGColor];
     } else {
-        colors = @[(id)self.secondColor.CGColor, (id)self.thirdColor.CGColor];
+        colors = @[(id)self.currentColor.CGColor, (id)self.uncompletedColor.CGColor];
+    }
+    
+    if ([self.skippedSteps containsObject:@(step)] && [self.pendingSteps containsObject:@(nextStep)] ) {
+        colors = @[(id)self.skippedColor.CGColor, (id)self.pendingColor.CGColor];
     }
 
     return colors;
@@ -194,10 +228,15 @@
 
 - (NSString *)setupImageForStep:(NSInteger)step
 {
+    
+    if ([self.pendingSteps containsObject:@(step)] ) {
+        return [self.pendingStepsIcons objectAtIndex:step];
+    }
+    
     if (step == self.stepCompleted) {
         return [self.uncompletedStepsIcons objectAtIndex:step];
     } else if (step > self.stepCompleted) {
-        return [self.pendingStepsIcons objectAtIndex:step];
+        return [self.currentStepsIcons objectAtIndex:step];
     } else {
         return [self.completedStepsIcons objectAtIndex:step];
     }
