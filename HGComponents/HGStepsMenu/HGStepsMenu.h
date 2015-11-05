@@ -12,9 +12,12 @@
 
 - (void)setupCompletedIcons:(NSArray *)stepsIcons;
 - (void)setupUncompletedIcons:(NSArray *)stepsIcons;
+- (void)setupCurrentIcons:(NSArray *)stepsIcons;
 - (void)setupPendingIcons:(NSArray *)stepsIcons;
+
 - (void)doneStep:(NSInteger)step;
 - (void)doneStep:(NSInteger)step withSkippedSteps:(NSArray *)skippedSteps;
+- (void)doneStep:(NSInteger)step withSkippedSteps:(NSArray *)skippedSteps andPendingSteps:(NSArray *)pendingSteps;
 - (void)startStepsCreation;
 
 
